@@ -56,7 +56,7 @@ export const siteConfig: SiteConfig = {
     twitter: "https://twitter.com/LunCoSim",
     github: "https://github.com/LunCoSim/lunco-sim",
     linkedin: "https://www.linkedin.com/company/luncosim/",
-    discord: "https://discord.gg/GyeTA6Pwqj",
+    discord: "https://discord.gg/A6U3GdvQum",
     youtube: "https://www.youtube.com/@LunCoSim",
   },
 }
