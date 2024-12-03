@@ -15,7 +15,7 @@ export default function Vision() {
       <div>
         <h1 className="head-text primary-gradient">Our Vision</h1>
         <p className="text-2xl max-w-lg">
-          Our vision is to provide a comprehensive suite of open-source applications
+          Our mission is to provide a complete suite of open-source applications
           tailored for Lunar Base engineering
         </p>
       </div>

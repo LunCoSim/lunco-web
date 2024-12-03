@@ -71,23 +71,10 @@ export default async function SiteFooter() {
         </div>
         <div id="support" className="flex flex-col items-start ml-10">
           <h1 className="font-heading primary-gradient mb-3">Support us</h1>
-          <Link href="https://www.gitcoin.co/" isExternal showAnchorIcon>
-            Gitcoin.co
+          <Link href="https://juicebox.money/@lunco" isExternal showAnchorIcon>
+            JuiceBox
           </Link>
-          <Link
-            href="https://giveth.io/project/lunco-a-full-cycle-space-operations-sim-tool"
-            isExternal
-            showAnchorIcon
-          >
-            Giteth.io
-          </Link>
-          <Link
-            href="https://app.copernicspace.com/spaceibles/0xAA54295c8eb420732a3748414B782C89229C0841-1587"
-            isExternal
-            showAnchorIcon
-          >
-            Profile NFT
-          </Link>
+          
         </div>
       </section>
       <div className="block lg:hidden">

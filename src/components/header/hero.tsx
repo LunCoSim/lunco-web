@@ -6,13 +6,13 @@ export default function Hero() {
   return (
     <section id="hero" className="max-x-7xl my-5 mx-2 lg:mx-0">
       <Link
-        href="/#support"
+        href="https://juicebox.money/@lunco"
         className="flex flex-col items-center justify-center"
       >
         <div className="px-3 py-2 border rounded-full hover:scale-105 transition-transform duration-75 shine shine-hover backdrop-blur-sm">
           <div className="flex justify-center gap-3 items-center">
             <Icons.logo width={25} height={25} />
-            <p className="primary-gradient">Support us build the future</p>
+            <p className="primary-gradient">Support our crowdfunding campaign</p>
           </div>
         </div>
       </Link>
