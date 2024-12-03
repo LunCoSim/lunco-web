@@ -9,7 +9,9 @@ export default function Hero() {
         href="https://juicebox.money/@lunco"
         className="flex flex-col items-center justify-center"
       >
-        <div className="px-3 py-2 border rounded-full hover:scale-105 transition-transform duration-75 shine shine-hover backdrop-blur-sm">
+        <div className="px-3 py-2 border rounded-full hover:scale-105 transition-transform duration-75 shine shine-hover backdrop-blur-sm" style="
+    background-color: rgba(70, 0,0, 0.8);
+">
           <div className="flex justify-center gap-3 items-center">
             <Icons.logo width={25} height={25} />
             <p className="primary-gradient">Support our crowdfunding campaign</p>
