@@ -9,20 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.2.8",
+    "@nextui-org/react": "^2.6.5",
     "@react-three/drei": "^9.88.11",
-    "@react-three/fiber": "^8.15.10",
+    "@react-three/fiber": "^8.17.10",
     "@studio-freight/lenis": "^1.0.27",
     "@t3-oss/env-nextjs": "^0.7.1",
     "@types/three": "^0.158.2",
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
-    "framer-motion": "^10.16.4",
-    "framer-motion-3d": "^10.16.4",
+    "framer-motion": ">=11.13.1",
+    "framer-motion-3d": ">=11.13.1",
     "lucide-react": "^0.292.0",
     "maath": "^0.10.4",
     "mdast-util-toc": "^7.0.0",
-    "next": "14.0.1",
+    "next": "^14.0.1",
     "next-contentlayer": "^0.3.4",
     "react": "^18",
     "react-dom": "^18",
@@ -37,7 +37,7 @@
     "remark-math": "^5.1.1",
     "shiki": "^0.14.4",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.158.0",
+    "three": "^0.171.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "eslint": "^9",
+    "eslint-config-next": "^15.0.4"
   }
 }
