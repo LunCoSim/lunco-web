@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/nextui-provider";
 import StarCanvas from "@/components/three-scenes/star-canvas";
+import GoogleTag from '@/components/GoogleTag';
 
 import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
@@ -80,6 +81,9 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <GoogleTag />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
