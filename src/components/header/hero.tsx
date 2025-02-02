@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section id="hero" className="max-x-7xl my-5 mx-2 lg:mx-0">
       <Link
-        href="https://juicebox.money/@lunco"
+        href="https://giveth.io/project/lunco-everyone-can-do-space"
         className="flex flex-col items-center justify-center"
       >
         <div className="px-3 py-2 border rounded-full hover:scale-105 transition-transform duration-75 shine shine-hover backdrop-blur-sm">
@@ -18,7 +18,7 @@ export default function Hero() {
       </Link>
       <h1 className="text-lg lg:text-lg max-w-7xl text-center my-5">
         We create an open source software for{" "}
-        <span className="primary-gradient">Lunar colony engineering</span>
+        <span className="primary-gradient">Space Missions Engineering</span>
       </h1>
       <div className="flex justify-center items-center">
         <h1 className="hidden lg:block font-heading tracking-wider leading-relaxed text-7xl lg:text-8xl text-justify">

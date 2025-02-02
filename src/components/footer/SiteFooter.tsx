@@ -71,8 +71,8 @@ export default async function SiteFooter() {
         </div>
         <div id="support" className="flex flex-col items-start ml-10">
           <h1 className="font-heading primary-gradient mb-3">Support us</h1>
-          <Link href="https://juicebox.money/@lunco" isExternal showAnchorIcon>
-            JuiceBox
+          <Link href="https://giveth.io/project/lunco-everyone-can-do-space" isExternal showAnchorIcon>
+            Giveth
           </Link>
           
         </div>
