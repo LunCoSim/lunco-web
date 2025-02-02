@@ -4,12 +4,12 @@ export const visions: CardInfo[] = [
   {
     title: "Unified Platform",
     description: "Unified open-source space engineering tools for a seamless experience.",
-    image: "/visions/unified-platform.png",
+    image: "/visions/unified-platform.svg",
   },
   {
     title: "Requirements Management",
     description: "Streamline and manage your project requirements with ease.",
-    image: "/visions/requirements-management.png",
+    image: "/visions/requirements-management.svg",
   },
   {
     title: "Models Visualizations",
