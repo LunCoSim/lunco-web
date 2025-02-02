@@ -1,0 +1,60 @@
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="300" fill="transparent"/>
+  
+  <!-- Document Outline -->
+  <rect x="100" y="40" width="300" height="220" 
+        fill="#1a1a1a" 
+        stroke="#4ECDC4" 
+        stroke-width="2"
+        rx="10"/>
+  
+  <!-- Header Bar -->
+  <rect x="120" y="60" width="260" height="30" 
+        fill="#2D3748" 
+        rx="5"/>
+  
+  <!-- Status Indicators -->
+  <circle cx="135" cy="75" r="5" fill="#FF6B6B"/>
+  <circle cx="155" cy="75" r="5" fill="#FFD93D"/>
+  <circle cx="175" cy="75" r="5" fill="#4ECDC4"/>
+  
+  <!-- Requirement Lines -->
+  <g fill="none" stroke="#4ECDC4" stroke-width="2">
+    <!-- Requirement 1 -->
+    <rect x="120" y="110" width="260" height="25" rx="3"/>
+    <circle cx="135" cy="122" r="6" fill="#4ECDC4"/>
+    <line x1="150" y1="122" x2="350" y2="122" stroke-width="1.5"/>
+    
+    <!-- Requirement 2 -->
+    <rect x="120" y="145" width="260" height="25" rx="3"/>
+    <circle cx="135" cy="157" r="6" fill="#FFD93D"/>
+    <line x1="150" y1="157" x2="350" y2="157" stroke-width="1.5"/>
+    
+    <!-- Requirement 3 -->
+    <rect x="120" y="180" width="260" height="25" rx="3"/>
+    <circle cx="135" cy="192" r="6" fill="#FF6B6B"/>
+    <line x1="150" y1="192" x2="350" y2="192" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Progress Bar -->
+  <rect x="120" y="220" width="260" height="20" 
+        fill="#2D3748" 
+        rx="10"/>
+  <rect x="120" y="220" width="180" height="20" 
+        fill="#4ECDC4" 
+        rx="10"/>
+        
+  <!-- Connection Lines -->
+  <g stroke="#4ECDC4" stroke-width="1" stroke-dasharray="4,4">
+    <path d="M390,122 C420,122 420,157 390,157"/>
+    <path d="M390,157 C420,157 420,192 390,192"/>
+  </g>
+  
+  <!-- Priority Markers -->
+  <g font-family="Arial" font-size="10" fill="#ffffff">
+    <text x="365" y="125">P1</text>
+    <text x="365" y="160">P2</text>
+    <text x="365" y="195">P3</text>
+  </g>
+</svg>
