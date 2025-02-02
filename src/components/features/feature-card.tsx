@@ -32,7 +32,7 @@ export default function FeatureCard({ feature }: FeatureCardProps) {
           src={feature.image}
           width={500}
         />
-        <CardFooter className="flex-col justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+        <CardFooter className="flex-col justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 bg-gray-800/70">
           <h1 className="font-heading text-lg">{feature.title}</h1>
           <p className="text-sm text-white/80">{feature.description}</p>
         </CardFooter>

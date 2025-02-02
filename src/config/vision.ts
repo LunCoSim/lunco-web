@@ -3,7 +3,7 @@ import type { CardInfo } from "@/types";
 export const visions: CardInfo[] = [
   {
     title: "Unified Platform",
-    description: "LunCo serves as a central hub, bringing together the best of open-source space engineering tools, offering a unified experience for users.",
+    description: "Unified open-source space engineering tools for a seamless experience.",
     image: "/visions/unified-platform.png",
   },
   {
