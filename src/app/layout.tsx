@@ -96,6 +96,11 @@ export default async function RootLayout({
           <div className="gradient" />
         </div>
         <Providers>{children}</Providers>
+        <script 
+          async 
+          src="https://eocampaign1.com/form/36b79094-fbf5-11ef-8268-35ea1b356baf.js" 
+          data-form="36b79094-fbf5-11ef-8268-35ea1b356baf"
+        />
       </body>
     </html>
   );
