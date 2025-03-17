@@ -1,21 +1,32 @@
 import { siteConfig } from "@/config/site";
 import { Icons } from "../icons";
+import Link from "next/link";
 
-const MobileFooter = () => {
+interface MobileFooterProps {
+  simulatorMode?: boolean;
+}
+
+const MobileFooter = ({ simulatorMode = false }: MobileFooterProps) => {
   return (
     <footer className="backdrop-blur-sm">
       <div className="bg-opacity-75">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row s">
           <p className="text-sm text-center sm:text-left flex flex-row justify-center">
             © {`${new Date().getFullYear()} `},
-            <a
-              href="/"
-              rel="noopener noreferrer"
-              className="ml-1 p-0"
-              target="_blank"
-            >
-              {siteConfig.name}
-            </a>
+            {simulatorMode ? (
+              <>
+                <Link href="/simulator" className="ml-1 p-0">
+                  {siteConfig.name} Simulator
+                </Link>
+                <Link href="/" className="ml-2 text-blue-500 hover:underline">
+                  (Main Site)
+                </Link>
+              </>
+            ) : (
+              <Link href="/" className="ml-1 p-0">
+                {siteConfig.name}
+              </Link>
+            )}
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a
