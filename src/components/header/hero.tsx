@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section id="hero" className="max-x-7xl my-5 mx-2 lg:mx-0">
       <Link
-        href="https://giveth.io/project/lunco-everyone-can-do-space"
+        href="https://juicebox.money/@lunco"
         className="flex flex-col items-center justify-center"
       >
         <div className="px-3 py-2 border rounded-full hover:scale-105 transition-transform duration-75 shine shine-hover backdrop-blur-sm">
