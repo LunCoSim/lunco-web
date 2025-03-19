@@ -3,12 +3,12 @@ import { SiteConfig } from "@/types"
 export const siteConfig: SiteConfig = {
   name: "LunCo",
   description:
-  "LunCo is a open-source simulation tool designed for planning space missions, with a focus on lunar settlements. Built with the powerful Godot 4 engine, LunCo aims to revolutionize the way space engineers design and collaborate on complex systems.",
+  "LunCo stands for Lunar Company. Our goal is to create opensource Lunar Settlement. Our main product is LunCoSim - an open-source simulation tool designed for planning space missions, with a focus on lunar settlements. Built with the powerful Godot 4 engine, LunCoSim aims to revolutionize the way space engineers design and collaborate on complex systems.",
   url: "https://lunco.space",
   ogImage: "https://lunco.space/og.png",
   creator: {
     name: "Rod Mamin",
-    url: "https://twitter.com/_Difint_",
+    url: "https://twitter.com/0xIonrod",
   },
   keywords: [
     'LunCo',
@@ -29,21 +29,6 @@ export const siteConfig: SiteConfig = {
     'Intellectual Property Non-Fungible Tokens',
     'Decentralized engineer profiles',
     'Interactive training modules',
-    'Linux Mate',
-    'Godot installation',
-    'FBX2glTF',
-    'Git LFS',
-    'LunCo repository',
-    'Install addons',
-    'Community support',
-    'Discord server',
-    'Twitter',
-    'Official website',
-    'LinkedIn',
-    'YouTube channel',
-    'Giveth.io donation',
-    'GIV tokens',
-    'Profile NFT',
     'Space engineering',
     'Lunar scenarios',
     'Real-world simulations',
@@ -53,7 +38,7 @@ export const siteConfig: SiteConfig = {
     'Spatial data'
   ],
   links: {
-    twitter: "https://twitter.com/LunCoSim",
+    twitter: "https://x.com/LunCoSim",
     github: "https://github.com/LunCoSim/lunco-sim",
     linkedin: "https://www.linkedin.com/company/luncosim/",
     discord: "https://discord.gg/A6U3GdvQum",
