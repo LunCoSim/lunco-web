@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/nextui-provider";
 import StarCanvas from "@/components/three-scenes/star-canvas";
-import GoogleTag from '@/components/GoogleTag';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import { siteConfig } from "@/config/site";
 import "@/styles/globals.css";
@@ -81,8 +81,8 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleTag />
       <head />
+      <GoogleTagManager gtmId="G-6BCK7ND55P" />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
