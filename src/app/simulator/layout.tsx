@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import { Providers } from "@/components/nextui-provider";
 import StarCanvas from "@/components/three-scenes/star-canvas";
-import GoogleTag from '@/components/GoogleTag';
 import { marketingConfig } from "@/config/marketing";
 import { MainNav } from "@/components/navbar/main-nav";
 import Link from "next/link";
@@ -87,7 +86,6 @@ export default async function SimulatorLayout({
   return (
     <html lang="en">
       <head>
-        <GoogleTag />
       </head>
       <body
         className={cn(
