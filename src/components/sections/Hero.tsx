@@ -1,10 +1,14 @@
+"use client";
+
 import { Icons } from "../icons";
 import Link from "next/link";
-import { HeaderVideo } from "./video";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Section } from "../ui/Section";
 
 export default function Hero() {
   return (
-    <section id="hero" className="max-x-7xl my-5 mx-2 lg:mx-0">
+    <Section id="hero" className="my-5 mx-2 lg:mx-0">
       <Link
         href="https://juicebox.money/@lunco"
         className="flex flex-col items-center justify-center"
@@ -26,15 +30,11 @@ export default function Hero() {
         </h1>
         <BigLogo />
       </div>
-      {/* <p className="text-md text-center">
-        Full-cycle space operations simulation tool for industrial applications
-        and enthusaists alike
-      </p> */}
       <div className="relative">
         <div className="absolute top-0 left-0 container mx-auto -translate-y-[50%]"></div>
         <HeaderVideo />
       </div>
-    </section>
+    </Section>
   );
 }
 
@@ -50,3 +50,29 @@ const BigLogo = () => {
     </section>
   );
 };
+
+const HeaderVideo = () => {
+  const scrollRef = useRef<any>(null);
+  const { scrollYProgress } = useScroll();
+
+  return (
+    <motion.section
+      className="max-w-5xl border border-muted rounded-md p-2 backdrop-blur-sm my-6 lg:my-20"
+      style={{
+        opacity: useTransform(scrollYProgress, [0, 1], [1, 0.3]),
+        scale: useTransform(scrollYProgress, [0, 1], [1, 0.4]),
+      }}
+      ref={scrollRef}
+    >
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-cover"
+      >
+        <source src="/videos/main.mp4" type="video/mp4" />
+      </video>
+    </motion.section>
+  );
+}; 

@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "contentlayer build && next build",
-    "static-build": "contentlayer build && next build",
     "start": "next start",
-    "serve": "npx serve out",
     "lint": "next lint"
   },
   "dependencies": {

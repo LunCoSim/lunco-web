@@ -20,36 +20,6 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Static Site Generation
-
-This project supports static site generation. To build a static version of the site:
-
-```bash
-npm run build
-# or
-yarn build
-# or 
-pnpm build
-# or
-bun build
-```
-
-The static files will be generated in the `out` directory. You can serve these files using any static file server.
-
-To serve the static files locally for testing:
-
-```bash
-npm run serve
-# or
-yarn serve
-# or
-pnpm serve
-# or
-bun serve
-```
-
-This will start a local server at [http://localhost:3000](http://localhost:3000) serving the static files.
-
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
