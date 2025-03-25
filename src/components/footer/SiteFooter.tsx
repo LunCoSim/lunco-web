@@ -5,10 +5,23 @@ import { Link } from "@nextui-org/react";
 import GitHubRelease from "@/types/github";
 import { ScrollShadow } from "@nextui-org/react";
 
+// This function will be called at build time
+async function getGithubReleases() {
+  try {
+    const res = await fetch(
+      "https://api.github.com/repos/LunCoSim/lunco-sim/releases",
+      { next: { revalidate: 86400 } } // Cache for 24 hours
+    );
+    return await res.json();
+  } catch (error) {
+    console.error("Failed to fetch GitHub releases:", error);
+    return []; // Return empty array as fallback
+  }
+}
+
 export default async function SiteFooter() {
-  const githubReleases: GitHubRelease[] = await fetch(
-    "https://api.github.com/repos/LunCoSim/lunco-sim/releases"
-  ).then((res) => res.json());
+  // Fetch GitHub releases at build time
+  const githubReleases: GitHubRelease[] = await getGithubReleases();
 
   return (
     <main className="border-t mt-6 backdrop-blur-sm">
