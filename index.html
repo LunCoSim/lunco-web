@@ -6,7 +6,7 @@
     <title>LunCo: Building the Open-Source Lunar Base</title>
     <style>
         /* Basic Reset */
-        body, h1, h2, h3, p, ul, li, a, header, nav, section, footer {
+        body, h1, h2, h3, p, ul, li, a, header, nav, section, footer, img {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -48,11 +48,25 @@
         header h1 {
             font-size: 1.8rem;
             font-weight: bold;
+            display: flex; /* Align icon and text */
+            align-items: center;
         }
         
         header h1 a {
              color: #ecf0f1;
              text-decoration: none;
+             display: flex; /* Make the link contain both images */
+             align-items: center;
+        }
+
+        header h1 img.logo-icon {
+            height: 50px; /* Increased size */
+            margin-right: 12px; /* Adjusted space */
+        }
+
+        header h1 img.logo-text {
+            height: 30px; /* Increased size */
+            /* The text logo SVG might need different height */
         }
 
         nav ul {
@@ -174,20 +188,16 @@
 
     </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BCK7ND55P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6BCK7ND55P');
-</script>
 <body>
 
     <header>
         <div class="container">
-            <h1><a href="#home">LunCo</a></h1>
+             <h1>
+                 <a href="#home">
+                    <img src="logo_icon.svg" alt="LunCo Icon" class="logo-icon">
+                    <img src="logo_text.svg" alt="LunCo Text" class="logo-text">
+                 </a>
+             </h1>
             <nav>
                 <ul>
                     <li><a href="#mission">Mission</a></li>
