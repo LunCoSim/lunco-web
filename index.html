@@ -336,12 +336,15 @@
 
         /* Hero Section Specifics */
         #home {
-            background: linear-gradient(rgba(10, 14, 23, 0.8), rgba(10, 14, 23, 0.9)), url('https://images.unsplash.com/photo-1614729939124-032f0a15b5aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
+            background: linear-gradient(rgba(10, 14, 23, 0.9), rgba(10, 14, 23, 0.95)), url('https://images.unsplash.com/photo-1614729939124-032f0a15b5aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') center center/cover no-repeat;
             color: #fff;
             text-align: center;
-            padding: 180px 0 120px;
+            padding: 120px 0;
             position: relative;
             overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
         
         #home::before {
@@ -352,22 +355,48 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 20% 30%, rgba(0, 194, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(100, 255, 218, 0.1) 0%, transparent 50%);
+                radial-gradient(circle at 20% 30%, rgba(0, 194, 255, 0.15) 0%, transparent 70%),
+                radial-gradient(circle at 80% 70%, rgba(100, 255, 218, 0.15) 0%, transparent 70%);
             z-index: 1;
+            animation: pulseGlow 8s ease-in-out infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
         }
 
         #home .container {
             position: relative;
             z-index: 2;
+            max-width: 1000px;
+        }
+
+        #home .hero-logo {
+            margin-bottom: 60px;
+            animation: fadeInDown 1s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #home .hero-logo img.logo-icon {
+            height: 100px;
+            filter: drop-shadow(0 0 20px rgba(0, 194, 255, 0.5));
+        }
+
+        #home .hero-logo img.logo-text {
+            height: 100px;
+            filter: drop-shadow(0 0 15px rgba(0, 194, 255, 0.4));
         }
 
         #home h1 {
-            font-size: 3.8rem;
+            font-size: 3.2rem;
             font-weight: 700;
             margin-bottom: 25px;
             color: var(--title-text);
-            text-shadow: 0 0 20px var(--border-glow);
+            text-shadow: 0 0 30px var(--border-glow);
             animation: fadeInDown 1s ease-out;
             letter-spacing: 2px;
             line-height: 1.2;
@@ -376,36 +405,72 @@
         
         #home h1 span {
             display: block;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: 400;
-            margin-top: 10px;
+            margin-top: 15px;
             letter-spacing: 4px;
             color: var(--primary-color);
-            opacity: 0.9;
+            text-shadow: 0 0 20px rgba(0, 194, 255, 0.5);
         }
         
         #home p {
-            font-size: 1.3rem;
-            margin-bottom: 50px;
-            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 0 auto 40px;
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            animation: fadeInUp 1s ease-out 0.3s;
-            animation-fill-mode: both;
+            color: rgba(255, 255, 255, 0.9);
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            line-height: 1.6;
-            font-family: 'Roboto Mono', monospace;
-            color: var(--light-text);
+        }
+        
+        #home .mission-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+        
+        #home .stat-item {
+            background: rgba(16, 24, 45, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 194, 255, 0.2);
+            min-width: 200px;
+            transition: all 0.3s ease;
+        }
+        
+        #home .stat-item:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 194, 255, 0.4);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        #home .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+        
+        #home .stat-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 194, 255, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
         #home .status-indicator {
-            display: inline-block;
-            height: 10px;
-            width: 10px;
+            width: 12px;
+            height: 12px;
             background-color: var(--secondary-color);
             border-radius: 50%;
-            margin-right: 5px;
+            display: inline-block;
+            box-shadow: 0 0 10px var(--secondary-color);
             animation: pulse 2s infinite;
         }
         
@@ -418,66 +483,6 @@
             }
             100% {
                 box-shadow: 0 0 0 0 rgba(100, 255, 218, 0);
-            }
-        }
-        
-        #home .mission-stats {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-        
-        #home .stat-item {
-            background: var(--panel-bg);
-            backdrop-filter: blur(10px);
-            padding: 15px 25px;
-            margin: 10px;
-            border-radius: 4px;
-            border: 1px solid rgba(0, 194, 255, 0.2);
-            min-width: 200px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 1s ease-out 0.9s;
-            animation-fill-mode: both;
-            font-family: 'Roboto Mono', monospace;
-        }
-        
-        #home .stat-label {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            color: var(--secondary-color);
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-            opacity: 0.8;
-            text-align: left;
-        }
-        
-        #home .stat-value {
-            font-size: 1.4rem;
-            font-weight: 700;
-            font-family: 'Roboto Mono', monospace;
-            text-align: left;
-        }
-        
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
             }
         }
         
@@ -800,18 +805,14 @@
 
     <header>
         <div class="container">
-             <h1>
-                 <a href="#home">
+            <h1>
+                <a href="#home">
                     <img src="logo_icon.svg" alt="LunCo Icon" class="logo-icon">
                     <img src="logo_text.svg" alt="LunCo Text" class="logo-text">
-                 </a>
-             </h1>
+                </a>
+            </h1>
             <nav>
                 <ul>
-                    <li><a href="#mission">Mission</a></li>
-                    <li><a href="#luncosim">LunCoSim</a></li>
-                    <li><a href="#lunar-base">Lunar Base</a></li>
-                    <li><a href="#community">Community</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -829,7 +830,17 @@
     <main>
         <section id="home">
             <div class="container">
-                <h1>Building Open Lunar Base<span>One Subsystem At A Time</span></h1>
+                <div class="hero-logo">
+                    <img src="logo_icon.svg" alt="LunCo Icon" class="logo-icon">
+                    <img src="logo_text.svg" alt="LunCo Text" class="logo-text">
+                </div>
+                <h1>LunCo - Lunar Company<span>A Web3 Entity to Summon Lunar Base</span></h1>
+                <p>We are a decentralized organization dedicated to building humanity's first open-source lunar settlement. Through web3 mechanisms, we're bringing together global talent and resources to make lunar colonization a reality.</p>
+            </div>
+        </section>
+
+        <section id="mission">
+            <div class="container">
                 <div class="mission-stats">
                     <div class="stat-item">
                         <div class="stat-label">Project Status</div>
@@ -844,7 +855,7 @@
                         <div class="stat-value">In Progress</div>
                     </div>
                 </div>
-                <p>The first step  is to develope a simulator for collaborative lunar base engineering, so teams around the world can work together effectively.</p>
+                
                 <div class="buttons">
                     <a href="https://juicebox.money/@lunco" class="button">
                         <i class="fas fa-coins"></i> GET $LUNCO at Juicebox
@@ -853,11 +864,7 @@
                         <i class="fas fa-rocket"></i> Try Prototype
                     </a>
                 </div>
-            </div>
-        </section>
 
-        <section id="mission">
-            <div class="container">
                 <h2>Our Mission: An Open-Source Lunar City</h2>
                 <p>
                     Our goal is ambitious yet crucial: to collaboratively design and develop a fully open-source lunar base, one essential subsystem at a time. We believe that an open, shared approach is the fastest and most effective way to enable a sustainable human presence on the Moon.
