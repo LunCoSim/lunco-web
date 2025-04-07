@@ -871,6 +871,47 @@
             border-top: 1px solid rgba(0, 194, 255, 0.1);
         }
 
+        .showcase-buttons {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .button-large {
+            font-size: 1.1rem;
+            padding: 15px 35px;
+            margin: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            color: var(--dark-bg);
+            text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        }
+
+        .button-large:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 194, 255, 0.4);
+            background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+        }
+
+        .button-large.secondary {
+            background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+        }
+
+        .button-large.secondary:hover {
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            box-shadow: 0 10px 25px rgba(255, 191, 0, 0.4);
+        }
+
+        .button-large i {
+            font-size: 1.2rem;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+
         @media (max-width: 768px) {
             .showcase-thumbnails {
                 grid-template-columns: 1fr;
@@ -883,6 +924,14 @@
 
             .showcase-img {
                 max-height: 180px;
+            }
+
+            .button-large {
+                padding: 12px 25px;
+                font-size: 1rem;
+                display: block;
+                margin: 15px auto;
+                max-width: 280px;
             }
         }
 
@@ -929,9 +978,9 @@
 
         <section id="showcase">
             <div class="container">
-                <h2>LunCoSim in Action</h2>
+                <h2>Lunar Colony Simulator in Action</h2>
                 <p class="reveal reveal-delay-1">
-                    Experience the power of LunCoSim through these visual demonstrations of our lunar base simulation environment.
+                    Our main product - platform for collaborative space missions engineering
                 </p>
 
                 <div class="showcase-grid reveal reveal-delay-2">
@@ -954,6 +1003,15 @@
                             <p class="showcase-caption">Detailed lunar environment visualization</p>
                         </div>
                     </div>
+                </div>
+                
+                <div class="showcase-buttons reveal reveal-delay-3">
+                    <a href="https://explorer.gitcoin.co/#/round/42161/867/52" target="_blank" class="button button-large">
+                        <i class="fas fa-hand-holding-heart"></i> Donate on Gitcoin
+                    </a>
+                    <a href="https://alpha.lunco.space" target="_blank" class="button button-large secondary">
+                        <i class="fas fa-rocket"></i> Try Alpha Version
+                    </a>
                 </div>
             </div>
         </section>
