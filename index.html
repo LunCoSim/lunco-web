@@ -938,6 +938,54 @@
             }
         }
 
+        /* Donation Button Styles */
+        .donation-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--dark-bg);
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 40px auto;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 194, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .donation-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 194, 255, 0.4);
+        }
+
+        .donation-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .donation-button:hover::before {
+            left: 100%;
+        }
+
+        .donation-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -970,6 +1018,11 @@
     <main>
         <section id="home">
             <div class="container">
+                <div class="donation-container">
+                    <a href="https://explorer.gitcoin.co/#/round/42161/867/52" target="_blank" class="donation-button">
+                        Donate to us on Gitcoin
+                    </a>
+                </div>
                 <div class="hero-logo">
                     <img src="logo_icon.svg" alt="LunCo Icon" class="logo-icon">
                     <img src="logo_text.svg" alt="LunCo Text" class="logo-text">
