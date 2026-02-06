@@ -167,7 +167,7 @@ a:hover {
 }
 
 .section {
-  padding: var(--space-4xl) 0;
+  padding: var(--space-2xl) 0;
   position: relative;
 }
 

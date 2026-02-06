@@ -2,6 +2,22 @@
 // Smooth scrolling, navigation, and analytics
 
 // ============================================
+// Our Story Toggle Function
+// ============================================
+function toggleStory() {
+    const moreContent = document.getElementById('story-more');
+    const toggleBtn = document.getElementById('story-toggle-btn');
+
+    if (moreContent.style.display === 'none') {
+        moreContent.style.display = 'block';
+        toggleBtn.textContent = 'Show less ↑';
+    } else {
+        moreContent.style.display = 'none';
+        toggleBtn.textContent = 'Read the full story →';
+    }
+}
+
+// ============================================
 // Smooth Scroll Navigation
 // ============================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

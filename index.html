@@ -39,7 +39,7 @@
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-container">
-      <a href="#" class="nav-logo">
+      <a href="/" class="nav-logo">
         <img src="luncoblogo.svg" alt="LunCo" style="height: 48px;">
       </a>
       <ul class="nav-menu">
@@ -60,26 +60,8 @@
       <p class="hero-subtitle">
         An open ecosystem for mission simulation, robotics standards, and blueprint sharing.
       </p>
-      <div class="hero-cta">
-        <a href="#products" class="btn btn-cosmic">Start Building</a>
-        <a href="https://tally.so/r/3jX6aE" class="btn btn-secondary" target="_blank">Join the Mission</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mission & Vision -->
-  <section class="section" id="mission">
-    <div class="container">
-      <h2 class="section-title">Vision & Mission</h2>
-      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <p style="font-size: var(--text-xl); margin-bottom: var(--space-lg); font-weight: 500;">
-          In 1969, NASA put a man on the Moon.<br>
-          In 2030, we give everyone the tools to build a city there.
-        </p>
-        <p style="color: var(--color-gray-600);">
-          To make space mission design 100× faster and 100× cheaper by creating the single collaborative platform where
-          every engineer, student, and startup can design, share, monetize, and fund space hardware together.
-        </p>
+      <div class="hero-cta" style="justify-content: center;">
+        <a href="https://alpha.lunco.space/" class="btn btn-cosmic" target="_blank">Explore Our Platform</a>
       </div>
     </div>
   </section>
@@ -91,10 +73,9 @@
       <div class="products-grid">
 
         <!-- LunCoSim -->
-        <div class="product-card">
-          <div class="product-icon"
-            style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 69, 0, 0.05)); padding: 12px;">
-            <img src="luncosimlogo.svg" alt="LunCoSim" style="width: 100%; height: 100%; object-fit: contain;">
+        <div class="product-card" style="padding: var(--space-lg);">
+          <div style="display: none;">
+            <!-- Icon removed -->
           </div>
           <p class="product-tagline">Where We Simulate</p>
           <h3 class="product-title">LunCoSim</h3>
@@ -106,10 +87,9 @@
         </div>
 
         <!-- LORS -->
-        <div class="product-card">
-          <div class="product-icon"
-            style="background: linear-gradient(135deg, rgba(255, 69, 0, 0.15), rgba(255, 69, 0, 0.05));">
-            🤖
+        <div class="product-card" style="padding: var(--space-lg);">
+          <div style="display: none;">
+            <!-- Icon removed -->
           </div>
           <p class="product-tagline">What We Simulate</p>
           <h3 class="product-title">LORS</h3>
@@ -121,10 +101,9 @@
         </div>
 
         <!-- CosmiFi -->
-        <div class="product-card">
-          <div class="product-icon"
-            style="background: linear-gradient(135deg, rgba(255, 179, 71, 0.15), rgba(255, 179, 71, 0.05));">
-            🔷
+        <div class="product-card" style="padding: var(--space-lg);">
+          <div style="display: none;">
+            <!-- Icon removed -->
           </div>
           <p class="product-tagline">Where We Share</p>
           <h3 class="product-title">CosmiFi</h3>
@@ -183,10 +162,14 @@
 
         <div style="margin-top: var(--space-2xl); text-align: center;">
           <a href="https://github.com/lunco" class="btn btn-primary" target="_blank">View on GitHub</a>
-          <a href="#" class="btn btn-secondary">Documentation</a>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Rover Image Full Screen -->
+  <section style="padding: 0; margin: 0;">
+    <img src="rover.png" alt="LORS Rover" style="width: 100%; height: auto; display: block;">
   </section>
 
   <!-- LORS Deep Dive -->
@@ -210,6 +193,17 @@
           standards—proving that open-source space engineering works.
         </p>
 
+        <p style="color: var(--color-gray-600); margin-bottom: var(--space-lg);">
+          This initiative is in collaboration with <a href="https://www.moondao.com" target="_blank"
+            style="color: var(--color-cosmic-orange); font-weight: 500;">MoonDAO</a>,
+          the world's largest decentralized space program.
+        </p>
+
+        <p style="margin-bottom: var(--space-lg);">
+          <a href="https://github.com/Official-MoonDao/LORS" target="_blank"
+            style="color: var(--color-cosmic-orange); font-weight: 500;">View the LORS Repository on GitHub →</a>
+        </p>
+
         <h4 style="margin-top: var(--space-2xl); margin-bottom: var(--space-md);">Technical Specifications</h4>
         <ul style="list-style: none; padding: 0;">
           <li style="padding: var(--space-sm) 0; border-bottom: 1px solid rgba(0,0,0,0.05);">
@@ -230,7 +224,7 @@
         </ul>
 
         <div style="margin-top: var(--space-2xl); text-align: center;">
-          <a href="#" class="btn btn-cosmic">Join LORS Development</a>
+          <a href="https://tally.so/r/3jX6aE" class="btn btn-cosmic" target="_blank">Join LORS Development</a>
         </div>
       </div>
     </div>
@@ -334,27 +328,6 @@
     </div>
   </section>
 
-  <!-- Collaborations -->
-  <section class="section" id="collaborations">
-    <div class="container">
-      <h2 class="section-title">Building the Future Together</h2>
-      <div class="collaborations-grid">
-        <div class="collaboration-logo">
-          <span style="font-size: var(--text-2xl); font-weight: 600;">MoonDAO</span>
-        </div>
-        <div class="collaboration-logo">
-          <span style="font-size: var(--text-2xl); font-weight: 600;">FUTURA</span>
-        </div>
-        <div class="collaboration-logo">
-          <span style="font-size: var(--text-2xl); font-weight: 600;">LAVA</span>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: var(--space-2xl);">
-        <a href="#opportunities" class="btn btn-secondary">Become a Partner</a>
-      </div>
-    </div>
-  </section>
-
   <!-- About Us Section -->
   <section class="section about-section" id="about">
     <div class="container">
@@ -367,27 +340,51 @@
           <!-- Our Story -->
           <div class="about-subsection" id="our-story">
             <h3>Our Story</h3>
-            <p>
-              LunCo was founded by Rod Mamin, a space systems engineer who witnessed firsthand the barriers preventing
-              talented engineers from contributing to space exploration. Throughout his career working on space
-              missions, Rod saw brilliant ideas shelved due to proprietary tools, lack of standardization, and the high
-              cost of entry into the space industry.
-            </p>
-            <p>
-              The turning point came when Rod realized that <span class="about-highlight">the same open-source
-                principles that revolutionized software
-                could transform space engineering</span>. But it required more than just releasing code—it needed an
-              integrated
-              ecosystem where simulation, standards, and IP protection worked together seamlessly.
-            </p>
-            <p>
-              LunCo emerged from this vision: <span class="about-highlight">to democratize lunar engineering</span> by
-              building professional tools that
-              anyone can use, standards that enable interoperability, and a marketplace that rewards open-source
-              contributors. We're part of the growing "DeSpace" movement, using Web3 technologies to coordinate global
-              collaboration and ensure creators are recognized for their work.
-            </p>
+            <div
+              style="display: grid; grid-template-columns: 400px 1fr; gap: var(--space-2xl); align-items: start; margin-bottom: var(--space-2xl);">
+              <!-- Rod Mamin Photo -->
+              <div
+                style="width: 100%; aspect-ratio: 3/4; border-radius: 12px; overflow: hidden; background: var(--color-gray-200);">
+                <img src="Rod Mamin.png" alt="Rod Mamin" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+
+              <!-- Story Content -->
+              <div>
+                <h4
+                  style="font-size: var(--text-2xl); font-weight: 400; line-height: 1.4; margin-bottom: var(--space-lg);">
+                  What drove Rod Mamin to <span style="color: var(--color-cosmic-orange);">build an
+                    open-source space engineering platform</span>?
+                </h4>
+                <p style="color: var(--color-gray-600); line-height: 1.7;">
+                  Rod Mamin spent years designing hardware for actual Moon missions, working on projects like the
+                  Asagumo rover at Spacebit and serving as Liberland Space Agency Program Director. Throughout his
+                  career, he witnessed firsthand how fragmented tools, trapped intellectual property, and proprietary
+                  systems were stifling innovation in space engineering.
+                </p>
+                <div id="story-more" style="display: none;">
+                  <p style="color: var(--color-gray-600); line-height: 1.7; margin-top: var(--space-md);">
+                    He saw brilliant engineers waste months reinventing basic components because IP couldn't be shared.
+                    He
+                    watched promising projects die in the "valley of death" between grants and venture capital. Rod
+                    realized that the same open-source principles that revolutionized software could transform space
+                    engineering—but it required more than just releasing code.
+                  </p>
+                  <p style="color: var(--color-gray-600); line-height: 1.7; margin-top: var(--space-md);">
+                    LunCo emerged from this vision: to create an integrated ecosystem where simulation, standards, and
+                    IP
+                    protection work together seamlessly, enabling anyone to design, share, monetize, and fund space
+                    hardware. We're democratizing lunar engineering by building professional tools that anyone can use,
+                    standards that enable interoperability, and a marketplace that rewards open-source contributors.
+                  </p>
+                </div>
+                <button id="story-toggle-btn" onclick="toggleStory()"
+                  style="margin-top: var(--space-md); color: var(--color-cosmic-orange); background: none; border: none; font-size: var(--text-base); font-weight: 500; cursor: pointer; padding: 0; text-decoration: underline;">
+                  Read the full story →
+                </button>
+              </div>
+            </div>
           </div>
+
 
           <!-- The Challenge -->
           <div class="about-subsection" id="challenge">
@@ -523,7 +520,8 @@
 
             <div class="team-grid">
               <div class="team-card">
-                <div class="team-photo">RM</div>
+                <div class="team-photo"><img src="Rod Mamin.png" alt="Rod Mamin"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"></div>
                 <h4 class="team-name">Rod Mamin</h4>
                 <p class="team-role">CEO, Founder</p>
                 <p class="team-bio">
@@ -533,7 +531,8 @@
               </div>
 
               <div class="team-card">
-                <div class="team-photo">RF</div>
+                <div class="team-photo"><img src="Rina Faber.png" alt="Rina Faber"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"></div>
                 <h4 class="team-name">Rina Faber</h4>
                 <p class="team-role">COO, Co-founder</p>
                 <p class="team-bio">
@@ -543,7 +542,8 @@
               </div>
 
               <div class="team-card">
-                <div class="team-photo">AD</div>
+                <div class="team-photo"><img src="Aleksa.png" alt="Aleksa Đurđević"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;"></div>
                 <h4 class="team-name">Aleksa Đurđević</h4>
                 <p class="team-role">Project Manager</p>
                 <p class="team-bio">
@@ -578,7 +578,7 @@
     <div class="container">
       <h2 class="section-title">Shape the Future of Lunar Exploration</h2>
       <p
-        style="text-align: center; max-width: 700px; margin: 0 auto var(--space-3xl); font-size: var(--text-xl); color: var(--color-gray-600);">
+        style="text-align: center; max-width: 700px; margin: 0 auto var(--space-xl); font-size: var(--text-lg); color: var(--color-gray-600);">
         We're building the future of lunar engineering with passionate contributors worldwide
       </p>
 
@@ -586,8 +586,7 @@
         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-xl); max-width: 1000px; margin: 0 auto;">
 
         <!-- Project Contributors -->
-        <div class="product-card">
-          <div class="product-icon">🚀</div>
+        <div class="product-card" style="padding: var(--space-lg);">
           <h3 class="product-title">Project Contributors</h3>
           <p class="product-description">
             Join our open-source community. We need software developers, hardware engineers, designers, and technical
@@ -597,8 +596,7 @@
         </div>
 
         <!-- Future Careers -->
-        <div class="product-card">
-          <div class="product-icon">💼</div>
+        <div class="product-card" style="padding: var(--space-lg);">
           <h3 class="product-title">Future Careers</h3>
           <p class="product-description">
             As we grow, we'll be hiring full-time team members. Stay updated on future opportunities in engineering,
@@ -608,14 +606,13 @@
         </div>
 
         <!-- Partnerships -->
-        <div class="product-card">
-          <div class="product-icon">🤝</div>
-          <h3 class="product-title">Partnerships</h3>
+        <div class="product-card" style="padding: var(--space-lg);">
+          <h3 class="product-title">Building the Future Together</h3>
           <p class="product-description">
             Interested in research partnerships, industry collaborations, or academic affiliations? Let's explore how we
             can work together.
           </p>
-          <a href="#" class="btn btn-secondary">Discuss Partnership</a>
+          <a href="#" class="btn btn-secondary">Become a Partner</a>
         </div>
 
       </div>
@@ -643,7 +640,9 @@
 
           <div class="product-card">
             <div
-              style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--color-cosmic-orange), var(--color-cosmic-red)); border-radius: 12px; margin-bottom: var(--space-md);">
+              style="width: 100%; height: 200px; border-radius: 12px; margin-bottom: var(--space-md); overflow: hidden;">
+              <img src="Screenshot at 2025-03-22 15-08-44.jpg" alt="LunCoSim Beta Launch"
+                style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <p class="product-tagline">Product Updates</p>
             <h4 style="margin-bottom: var(--space-sm);">LunCoSim Beta Launch</h4>
@@ -656,7 +655,9 @@
 
           <div class="product-card">
             <div
-              style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--color-cosmic-red), var(--color-cosmic-amber)); border-radius: 12px; margin-bottom: var(--space-md);">
+              style="width: 100%; height: 200px; border-radius: 12px; margin-bottom: var(--space-md); overflow: hidden;">
+              <img src="Screenshot at 2025-03-23 19-38-27.png" alt="Building Modular Rovers with LORS"
+                style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <p class="product-tagline">Technical</p>
             <h4 style="margin-bottom: var(--space-sm);">Building Modular Rovers with LORS</h4>
@@ -668,7 +669,9 @@
 
           <div class="product-card">
             <div
-              style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--color-cosmic-amber), var(--color-cosmic-orange)); border-radius: 12px; margin-bottom: var(--space-md);">
+              style="width: 100%; height: 200px; border-radius: 12px; margin-bottom: var(--space-md); overflow: hidden;">
+              <img src="Screenshot at 2025-03-23 19-39-03.png" alt="Meet Our Contributors"
+                style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <p class="product-tagline">Community</p>
             <h4 style="margin-bottom: var(--space-sm);">Meet Our Contributors</h4>
@@ -744,8 +747,9 @@
           <p style="color: var(--color-gray-300); font-size: var(--text-sm); margin-bottom: var(--space-md);">
             Get the latest news and updates
           </p>
-          <form style="display: flex; gap: var(--space-xs);">
-            <input type="email" placeholder="Your email"
+          <form action="https://emailoctopus.com/lists/36b79094-fbf5-11ef-8268-35ea1b356baf/members/embedded/1.3s/add"
+            method="post" style="display: flex; gap: var(--space-xs);">
+            <input type="email" name="emailAddress" placeholder="Your email" required
               style="flex: 1; padding: var(--space-sm); border-radius: 8px; border: 1px solid var(--color-gray-600); background: var(--color-gray-900); color: white; font-size: var(--text-sm);">
             <button type="submit" class="btn btn-primary" style="padding: var(--space-sm) var(--space-md);">→</button>
           </form>
