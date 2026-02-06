@@ -81,12 +81,69 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all sections and cards
-document.querySelectorAll('.section, .product-card, .team-card').forEach(el => {
+document.querySelectorAll('.section:not(.about-section), .product-card, .team-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
+
+// ============================================
+// About Section Specific Animations
+// ============================================
+const aboutSection = document.querySelector('.about-section');
+const aboutSubsections = document.querySelectorAll('.about-subsection');
+const aboutNavLinks = document.querySelectorAll('.about-nav-link');
+
+// Glow effect when About section is in view
+if (aboutSection) {
+    const aboutObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                aboutSection.classList.add('glow-active');
+            } else {
+                aboutSection.classList.remove('glow-active');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    aboutObserver.observe(aboutSection);
+}
+
+// Subsection fade-in animations
+const subsectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.2, rootMargin: '-50px 0px -100px 0px' });
+
+aboutSubsections.forEach(section => subsectionObserver.observe(section));
+
+// Active about-nav-link tracking
+function updateAboutNav() {
+    let currentSubsection = '';
+    const scrollPosition = window.pageYOffset + 200;
+
+    aboutSubsections.forEach(subsection => {
+        const subsectionTop = subsection.offsetTop;
+        const subsectionHeight = subsection.offsetHeight;
+
+        if (scrollPosition >= subsectionTop && scrollPosition < subsectionTop + subsectionHeight) {
+            currentSubsection = subsection.getAttribute('id');
+        }
+    });
+
+    aboutNavLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSubsection}`) {
+            link.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', updateAboutNav);
 
 // ============================================
 // Navigation Background on Scroll

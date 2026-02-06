@@ -173,7 +173,7 @@ a:hover {
 
 .section-title {
   text-align: center;
-  margin-bottom: var(--space-3xl);
+  margin-bottom: 4.2rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -363,26 +363,12 @@ a:hover {
   overflow: hidden;
 }
 
-.product-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--color-cosmic-orange), var(--color-cosmic-red));
-  opacity: 0;
-  transition: opacity var(--transition-base);
-}
+/* removed thicker top border for consistency with team section */
 
 .product-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   border-color: var(--color-cosmic-orange);
-}
-
-.product-card:hover::before {
-  opacity: 1;
 }
 
 .product-icon {
@@ -458,55 +444,115 @@ a:hover {
 }
 
 /* === About Us Section === */
+
+/* Cosmic glow effect around viewport */
+.about-section {
+  position: relative;
+  background: var(--color-white);
+}
+
+.about-section::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 107, 53, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(255, 69, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 80% at 0% 50%, rgba(255, 179, 71, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 80% at 100% 50%, rgba(255, 127, 80, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-section.glow-active::before {
+  opacity: 1;
+}
+
 .about-container {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 1fr 200px;
   gap: var(--space-3xl);
-  margin-top: var(--space-3xl);
+  margin-top: var(--space-2xl);
+  position: relative;
+  z-index: 1;
 }
 
 .about-nav {
+  order: 2;
   position: sticky;
-  top: 100px;
+  top: 120px;
   height: fit-content;
+  text-align: right;
 }
 
 .about-nav-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-md);
 }
 
 .about-nav-link {
   font-size: var(--text-base);
-  color: var(--color-gray-600);
+  color: var(--color-gray-300);
   padding: var(--space-xs) 0;
-  transition: color var(--transition-base);
-  font-weight: 300;
+  transition: all var(--transition-base);
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
-.about-nav-link:hover,
+.about-nav-link:hover {
+  color: var(--color-gray-600);
+}
+
 .about-nav-link.active {
   color: var(--color-cosmic-orange);
+  font-weight: 500;
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 900px;
+  order: 1;
 }
 
 .about-subsection {
-  margin-bottom: var(--space-4xl);
-  scroll-margin-top: 100px;
+  margin-bottom: 180px;
+  scroll-margin-top: 120px;
+  opacity: 0.4;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-subsection.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-subsection h3 {
-  margin-bottom: var(--space-lg);
-  font-weight: 400;
+  font-size: var(--text-5xl);
+  font-weight: 300;
+  margin-bottom: var(--space-2xl);
+  letter-spacing: -0.02em;
 }
 
 .about-subsection p {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
+  font-size: var(--text-lg);
+  line-height: 1.8;
+}
+
+/* Accent text highlighting */
+.about-highlight {
+  color: var(--color-cosmic-orange);
+  font-weight: 500;
+}
+
+/* Strong text in about section */
+.about-subsection strong {
+  color: var(--color-black);
+  font-weight: 600;
 }
 
 /* === Team Section === */
@@ -619,14 +665,28 @@ a:hover {
   }
 
   .about-nav {
+    order: -1;
     position: static;
+    text-align: left;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: var(--space-md);
+    margin-bottom: var(--space-xl);
   }
 
   .about-nav-list {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .about-nav-link {
+    color: var(--color-gray-600);
+  }
+
+  .about-subsection {
+    margin-bottom: 100px;
+    opacity: 1;
+    transform: none;
   }
 }
 
