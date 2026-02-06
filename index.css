@@ -558,16 +558,16 @@ a:hover {
 /* === Team Section === */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-xl);
-  margin-top: var(--space-2xl);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
 }
 
 .team-card {
   background: var(--color-white);
   border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 24px;
-  padding: var(--space-xl);
+  border-radius: 16px;
+  padding: var(--space-md);
   text-align: center;
   transition: all var(--transition-base);
 }
