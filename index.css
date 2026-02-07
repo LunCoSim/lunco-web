@@ -592,9 +592,9 @@ a:hover {
 }
 
 .team-name {
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: 500;
-  margin-bottom: var(--space-xs);
+  margin-bottom: 2px;
 }
 
 .team-role {
@@ -602,13 +602,27 @@ a:hover {
   color: var(--color-cosmic-orange);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xs);
 }
 
 .team-bio {
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   color: var(--color-gray-600);
-  line-height: 1.6;
+  line-height: 1.5;
+  margin-bottom: var(--space-xs);
+}
+
+.team-linkedin {
+  font-size: var(--text-xs);
+  color: var(--color-cosmic-orange);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.team-linkedin:hover {
+  text-decoration: underline;
 }
 
 /* === Footer === */
