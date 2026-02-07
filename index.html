@@ -1,25 +1,22 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LunCo | Open Source Lunar Engineering Platform</title>
   <meta name="description"
     content="Building the gateway to the solar system through collaborative simulation, standardized robotics, and decentralized innovation. LunCoSim, LORS, and CosmiFi.">
-
-  <!-- Open Graph -->
   <meta property="og:title" content="LunCo | Open Source Lunar Engineering Platform">
   <meta property="og:description"
     content="Democratizing lunar exploration through open-source tools and Web3 innovation.">
   <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="luncoblogo.svg">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="index.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>LunCo | Open Source Lunar Engineering</title>
+<link rel="stylesheet" href="index.css">
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BCK7ND55P"></script>
   <script>
@@ -35,812 +32,809 @@
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">
-        <img src="luncoblogo.svg" alt="LunCo" style="height: 48px;">
-      </a>
-      <ul class="nav-menu">
-        <li><a href="#about" class="nav-link">About Us</a></li>
-        <li><a href="#products" class="nav-link">Products</a></li>
-        <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
-        <li><a href="#opportunities" class="nav-link">Opportunities</a></li>
-        <li><a href="#newsroom" class="nav-link">Blog</a></li>
-        <li><a href="https://tally.so/r/3jX6aE" class="btn btn-primary" target="_blank">Join the Mission</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Lunar Infrastructure. Opensourced.</h1>
-      <p class="hero-subtitle">
-        An open ecosystem for mission simulation, robotics standards, and blueprint sharing.
-      </p>
-      <div class="hero-cta" style="justify-content: center;">
-        <a href="https://alpha.lunco.space/" class="btn btn-cosmic" target="_blank">Explore Our Platform</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products Overview -->
-  <section class="section" id="products" style="background: var(--color-gray-100);">
-    <div class="container">
-      <h2 class="section-title">Our Ecosystem</h2>
-      <div class="products-grid">
-
-        <!-- LunCoSim -->
-        <div class="product-card" style="padding: var(--space-lg);">
-          <div style="display: none;">
-            <!-- Icon removed -->
-          </div>
-          <p class="product-tagline">Where We Simulate</p>
-          <h3 class="product-title">LunCoSim</h3>
-          <p class="product-description">
-            Professional-grade lunar mission simulator with a modern, user-friendly interface. Model complex systems
-            like rovers and habitats with physics-accurate lunar environments. Open-source and built for collaboration.
-          </p>
-          <a href="#luncosim" class="btn btn-secondary">Learn More →</a>
-        </div>
-
-        <!-- LORS -->
-        <div class="product-card" style="padding: var(--space-lg);">
-          <div style="display: none;">
-            <!-- Icon removed -->
-          </div>
-          <p class="product-tagline">What We Simulate</p>
-          <h3 class="product-title">LORS</h3>
-          <p class="product-description">
-            Lunar Open Robotics Standard—modular, customizable rover platform with community-driven validation. We're
-            launching a 2kg rover in 3 years to prove our standards and simulator accuracy.
-          </p>
-          <a href="#lors" class="btn btn-secondary">Explore LORS →</a>
-        </div>
-
-        <!-- CosmiFi -->
-        <div class="product-card" style="padding: var(--space-lg);">
-          <div style="display: none;">
-            <!-- Icon removed -->
-          </div>
-          <p class="product-tagline">Where We Share</p>
-          <h3 class="product-title">CosmiFi</h3>
-          <p class="product-description">
-            Marketplace for engineering blueprints with NFT-based IP protection. Think "Zora for Engineers"—composable
-            assets, decentralized sharing, and monetization for open-source contributors.
-          </p>
-          <a href="#cosmifi" class="btn btn-secondary">Discover CosmiFi →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- LunCoSim Deep Dive -->
-  <section class="section" id="luncosim">
-    <div class="container">
-      <div style="max-width: 900px; margin: 0 auto;">
-        <div style="display: flex; justify-content: center; margin-bottom: var(--space-xl);">
-          <img src="luncosimlogo.svg" alt="LunCoSim" style="max-height: 96px; width: auto;">
-        </div>
-
-        <p style="margin-bottom: var(--space-lg); font-size: var(--text-xl);">
-          LunCoSim is a professional-grade lunar simulation platform designed to be both powerful for experts and
-          accessible for newcomers. Built on open-source principles, it provides a modern interface for modeling,
-          testing, and validating lunar systems.
-        </p>
-
-        <h4 style="margin-top: var(--space-xl); margin-bottom: var(--space-lg);">Key Capabilities</h4>
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md);">
-          <div
-            style="padding: var(--space-lg); background: var(--color-gray-50); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
-            <h5
-              style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              Physics-Accurate Lunar Environment</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.6;">
-              Realistic gravity, regolith mechanics, and radiation modeling for true-to-life simulations.
-            </p>
-          </div>
-          <div
-            style="padding: var(--space-lg); background: var(--color-gray-50); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
-            <h5
-              style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              Modular System Design</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.6;">
-              Build rovers, habitats, and infrastructure from composable components.
-            </p>
-          </div>
-          <div
-            style="padding: var(--space-lg); background: var(--color-gray-50); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
-            <h5
-              style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              Real-Time Collaboration</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.6;">
-              Work with teams globally on shared simulations in real-time.
-            </p>
-          </div>
-          <div
-            style="padding: var(--space-lg); background: var(--color-gray-50); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
-            <h5
-              style="font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              LORS Integration</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.6;">
-              Native support for Lunar Open Robotics Standards.
-            </p>
+  <div id="root">
+    <div class="min-h-screen bg-white">
+      <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm"
+        style="opacity: 1; transform: none;">
+        <div class="max-w-7xl mx-auto container-padding">
+          <div class="flex items-center justify-between h-[72px]"><a href="" class="flex items-center gap-2"><img
+                alt="LunCo" class="h-8 w-auto" src="./images/luncoblogo.svg"></a>
+            <div class="hidden md:flex items-center gap-8"><a href="#about"
+                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">About Us</a><a
+                href="#products"
+                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Products</a><a
+                href="#roadmap"
+                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Roadmap</a><a
+                href="#opportunities"
+                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Opportunities</a><a
+                href="#newsroom"
+                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Blog</a></div>
+            <div class="hidden md:block"><a href="https://tally.so/r/3jX6aE" target="_blank" rel="noopener noreferrer"
+                data-slot="button" data-variant="default" data-size="default"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 py-2 has-[&gt;svg]:px-3 bg-bg-dark text-white hover:bg-bg-dark/90 rounded-full px-6 transition-transform hover:scale-[1.02]">Join
+                the Mission</a></div><button class="md:hidden p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu text-text-primary"
+                aria-hidden="true">
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+              </svg></button>
           </div>
         </div>
-
-        <h4 style="margin-top: var(--space-2xl); margin-bottom: var(--space-md);">For Professionals</h4>
-        <p style="color: var(--color-gray-600); margin-bottom: var(--space-md);">
-          LunCoSim provides advanced simulation capabilities including thermal analysis, power system modeling,
-          communication link budgets, and trajectory planning. Our solver engine supports multi-physics simulations with
-          customizable fidelity levels, allowing you to balance accuracy and computational efficiency.
-        </p>
-
-        <div style="margin-top: var(--space-2xl); text-align: center;">
-          <a href="https://github.com/LunCoSim/lunco-sim" class="btn btn-primary" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rover Image Full Screen -->
-  <section style="padding: 0; margin: 0;">
-    <img src="rover.png" alt="LORS Rover" style="width: 100%; height: auto; display: block;">
-  </section>
-
-  <!-- LORS Deep Dive -->
-  <section class="section" id="lors" style="background: var(--color-gray-100);">
-    <div class="container">
-      <div style="max-width: 900px; margin: 0 auto;">
-        <p class="product-tagline" style="text-align: center;">What We Simulate</p>
-        <h2 style="text-align: center; margin-bottom: var(--space-xl);">LORS: Lunar Open Robotics Standard</h2>
-
-        <p style="margin-bottom: var(--space-lg); font-size: var(--text-xl);">
-          LORS is more than a rover—it's a comprehensive standard for modular, interoperable lunar robotics. Built with
-          community validation at its core, we're proving our approach by launching a real 2kg rover to the Moon within
-          3 years.
-        </p>
-
-        <h4 style="margin-top: var(--space-2xl); margin-bottom: var(--space-md);">Why LORS Matters</h4>
-        <p style="color: var(--color-gray-600); margin-bottom: var(--space-lg);">
-          Traditional space hardware is proprietary, expensive, and incompatible. LORS changes this by establishing open
-          standards that enable rapid prototyping, cost reduction through modularity, and global collaboration. When our
-          rover successfully operates on the lunar surface, it will validate both our simulator and our
-          standards—proving that open-source space engineering works.
-        </p>
-
-        <p style="color: var(--color-gray-600); margin-bottom: var(--space-lg);">
-          This initiative is in collaboration with <a href="https://www.moondao.com" target="_blank"
-            style="color: var(--color-cosmic-orange); font-weight: 500;">MoonDAO</a>,
-          the world's largest decentralized space program.
-        </p>
-
-        <p style="margin-bottom: var(--space-lg);">
-          <a href="https://github.com/Official-MoonDao/LORS" target="_blank"
-            style="color: var(--color-cosmic-orange); font-weight: 500;">View the LORS Repository on GitHub →</a>
-        </p>
-
-        <h4 style="margin-top: var(--space-xl); margin-bottom: var(--space-md);">Technical Specifications</h4>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          <li style="padding: var(--space-xs) 0;"><strong>Mass:</strong> 2kg (Phase 1 rover)</li>
-          <li style="padding: var(--space-xs) 0;"><strong>Architecture:</strong> Modular subsystems with standardized
-            interfaces</li>
-          <li style="padding: var(--space-xs) 0;"><strong>Power:</strong> Solar + battery hybrid system</li>
-          <li style="padding: var(--space-xs) 0;"><strong>Communication:</strong> Direct-to-Earth and relay-compatible
-          </li>
-          <li style="padding: var(--space-xs) 0;"><strong>Launch Timeline:</strong> 3 years (community-driven
-            development)</li>
-        </ul>
-
-        <div style="margin-top: var(--space-2xl); text-align: center;">
-          <a href="https://tally.so/r/3jX6aE" class="btn btn-cosmic" target="_blank">Join LORS Development</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CosmiFi Deep Dive -->
-  <section class="section" id="cosmifi">
-    <div class="container">
-      <div style="max-width: 900px; margin: 0 auto;">
-        <p class="product-tagline" style="text-align: center;">Where We Share</p>
-        <h2 style="text-align: center; margin-bottom: var(--space-xl);">CosmiFi</h2>
-
-        <p style="margin-bottom: var(--space-lg); font-size: var(--text-xl);">
-          CosmiFi is a Web3-enabled marketplace for engineering blueprints and IP. We're solving the fundamental
-          challenge of open-source hardware: how do creators get recognized and compensated for their work?
-        </p>
-
-        <h4 style="margin-top: var(--space-2xl); margin-bottom: var(--space-md);">NFT Blueprints: Composable Engineering
-          IP</h4>
-        <p style="color: var(--color-gray-600); margin-bottom: var(--space-lg);">
-          Every system is made of subsystems. CosmiFi's NFT Blueprints are composable—when you use someone's motor
-          design in your rover, the attribution and value flow are automatically tracked. Think of it as "Zora for
-          Engineers": a decentralized platform where creators maintain ownership while enabling collaboration.
-        </p>
-
-        <h4 style="margin-top: var(--space-xl); margin-bottom: var(--space-lg); text-align: center;">How It Works</h4>
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-xl); text-align: center;">
-          <div style="padding: var(--space-md);">
-            <h5
-              style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              Create</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.7;">Design in LunCoSim and mint as NFT Blueprint</p>
+      </nav>
+      <main>
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+          <div class="absolute inset-0 z-0"><img alt="Lunar surface with Earth in background"
+              class="w-full h-full object-cover" src="./images/hero-bg.svg">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
           </div>
-          <div style="padding: var(--space-md);">
-            <h5
-              style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              Share</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.7;">List on CosmiFi marketplace with licensing terms
-            </p>
-          </div>
-          <div style="padding: var(--space-md);">
-            <h5
-              style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              Compose</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.7;">Others build on your work with automatic
-              attribution</p>
-          </div>
-          <div style="padding: var(--space-md);">
-            <h5
-              style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-sm); color: var(--color-cosmic-orange);">
-              Earn</h5>
-            <p style="color: var(--color-gray-600); line-height: 1.7;">Receive royalties when your components are used
-            </p>
-          </div>
-        </div>
-
-        <div style="margin-top: var(--space-2xl); text-align: center;">
-          <a href="https://github.com/LunCoSim/CosmiFi" class="btn btn-primary" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ecosystem Roadmap -->
-  <section class="section" id="roadmap" style="background: var(--color-gray-100);">
-    <div class="container">
-      <h2 class="section-title">Our Journey to Lunar Bases</h2>
-      <div class="roadmap-container">
-
-        <!-- Phase 1 -->
-        <div class="roadmap-item">
-          <div class="roadmap-marker">1</div>
-          <div class="roadmap-content">
-            <h4>Platform Development</h4>
-            <p>Building LunCoSim, LORS standards, and CosmiFi beta.</p>
-          </div>
-        </div>
-
-        <!-- Phase 2 -->
-        <div class="roadmap-item">
-          <div class="roadmap-marker">2</div>
-          <div class="roadmap-content">
-            <h4>Rover Design</h4>
-            <p>Community-driven design & prototyping of 2kg LORS rover.</p>
-          </div>
-        </div>
-
-        <!-- Phase 3 -->
-        <div class="roadmap-item">
-          <div class="roadmap-marker">3</div>
-          <div class="roadmap-content">
-            <h4>Lunar Mission</h4>
-            <p>Launch LORS rover to Moon for live validation.</p>
-          </div>
-        </div>
-
-        <!-- Phase 4 -->
-        <div class="roadmap-item">
-          <div class="roadmap-marker">4</div>
-          <div class="roadmap-content">
-            <h4>Standard Adoption</h4>
-            <p>Space agencies & industry adopt LORS standards.</p>
-          </div>
-        </div>
-
-        <!-- Phase 5 -->
-        <div class="roadmap-item">
-          <div class="roadmap-marker">5</div>
-          <div class="roadmap-content">
-            <h4>Lunar Bases</h4>
-            <p>LunCo ecosystem powers permanent infrastructure.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section class="section about-section" id="about">
-    <div class="container">
-      <h2 class="section-title">About Us</h2>
-
-      <div class="about-container">
-        <!-- Content -->
-        <div class="about-content">
-
-          <!-- Our Story -->
-          <div class="about-subsection" id="our-story">
-            <h3>Our Story</h3>
-            <div
-              style="display: grid; grid-template-columns: 400px 1fr; gap: var(--space-2xl); align-items: start; margin-bottom: var(--space-2xl);">
-              <!-- Rod Mamin Photo -->
-              <div
-                style="width: 100%; aspect-ratio: 3/4; border-radius: 12px; overflow: hidden; background: var(--color-gray-200);">
-                <img src="Rod Mamin.png" alt="Rod Mamin" style="width: 100%; height: 100%; object-fit: cover;">
-              </div>
-
-              <!-- Story Content -->
-              <div>
-                <h4
-                  style="font-size: var(--text-3xl); font-weight: 400; line-height: 1.4; margin-bottom: var(--space-lg);">
-                  What drove Rod Mamin to <span style="color: var(--color-cosmic-orange);">build an
-                    open-source space engineering platform</span><span
-                    style="color: var(--color-cosmic-orange);">?</span>
-                </h4>
-                <p style="color: var(--color-gray-600); line-height: 1.7;">
-                  Rod Mamin spent years designing hardware for actual Moon missions, working on projects like the
-                  Asagumo rover at Spacebit and serving as Liberland Space Agency Program Director. Throughout his
-                  career, he witnessed firsthand how fragmented tools, trapped intellectual property, and proprietary
-                  systems were stifling innovation in space engineering.
-                </p>
-                <div id="story-more" style="display: none;">
-                  <p style="color: var(--color-gray-600); line-height: 1.7; margin-top: var(--space-md);">
-                    He saw brilliant engineers waste months reinventing basic components because IP couldn't be shared.
-                    He
-                    watched promising projects die in the "valley of death" between grants and venture capital. Rod
-                    realized that the same open-source principles that revolutionized software could transform space
-                    engineering—but it required more than just releasing code.
-                  </p>
-                  <p style="color: var(--color-gray-600); line-height: 1.7; margin-top: var(--space-md);">
-                    LunCo emerged from this vision: to create an integrated ecosystem where simulation, standards, and
-                    IP
-                    protection work together seamlessly, enabling anyone to design, share, monetize, and fund space
-                    hardware. We're democratizing lunar engineering by building professional tools that anyone can use,
-                    standards that enable interoperability, and a marketplace that rewards open-source contributors.
-                  </p>
+          <div class="relative z-10 max-w-5xl mx-auto container-padding text-center pt-20">
+            <div style="opacity: 1; transform: none;">
+              <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight mb-6">
+                Lunar Infrastructure. <span class="text-cosmic-orange">Opensourced.</span></h1>
+            </div>
+            <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
+              style="opacity: 1; transform: none;">An open ecosystem for mission simulation, robotics standards, and
+              blueprint sharing.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" style="opacity: 1; transform: none;"><a
+                href="https://alpha.lunco.space/" target="_blank" rel="noopener noreferrer" data-slot="button"
+                data-variant="default" data-size="lg"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 has-[&gt;svg]:px-4 bg-white text-bg-dark hover:bg-white/90 rounded-full px-8 py-6 text-base font-medium transition-transform hover:scale-[1.02] group">Explore
+                Our Platform<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
+                  aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg></a></div>
+            <div class="mt-16 mx-auto max-w-3xl" style="opacity: 1; transform: none;">
+              <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="text-center">
+                    <div class="text-3xl font-light text-white mb-2">3</div>
+                    <div class="text-white/60 text-sm">Core Products</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-light text-white mb-2">2kg</div>
+                    <div class="text-white/60 text-sm">LORS Rover</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-light text-white mb-2">Open</div>
+                    <div class="text-white/60 text-sm">Source First</div>
+                  </div>
                 </div>
-                <button id="story-toggle-btn" onclick="toggleStory()"
-                  style="margin-top: var(--space-md); color: var(--color-cosmic-orange); background: none; border: none; font-size: var(--text-base); font-weight: 500; cursor: pointer; padding: 0; text-decoration: underline;">
-                  Read the full story →
-                </button>
               </div>
             </div>
           </div>
-
-
-          <!-- The Challenge -->
-          <div class="about-subsection" id="challenge">
-            <h3>The Challenge</h3>
-            <p>
-              The $1.8T space economy relies on an outdated, closed-source infrastructure that actively prevents global
-              collaboration and efficiency.
-            </p>
-            <p>
-              <strong>Fragmented & Costly Tools:</strong> Engineers waste most of their time on version-control hell,
-              email chains, and translating files between 15+ disconnected tools.
-            </p>
-            <p>
-              <strong>Trapped IP & Wasted Effort:</strong> Component designs are trapped. Teams spend billions
-              reinventing basic parts because IP cannot be licensed, exchanged, or reused with verifiable ownership.
-            </p>
-            <p>
-              <strong>The Valley of Death:</strong> The most innovative open-source hardware and DeSci projects die.
-              They fit the slow-grant model (too slow) or the VC model (no IP moat).
-            </p>
+          <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10" style="opacity: 1;">
+            <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
+              <div class="w-1.5 h-1.5 bg-white/60 rounded-full" style="transform: translateY(3.3148px);"></div>
+            </div>
           </div>
-
-          <!-- The Opportunity -->
-          <div class="about-subsection" id="opportunity">
-            <h3>The Opportunity</h3>
-            <p>
-              The lunar economy is projected to reach $170 billion by 2040, driven by renewed government interest
-              (Artemis program), commercial ventures, and international competition. This creates an unprecedented
-              opportunity for open-source solutions.
-            </p>
-            <p>
-              <strong>Global Talent Pool:</strong> Millions of engineers, researchers, and enthusiasts worldwide want to
-              contribute to space exploration but lack access to professional tools.
-            </p>
-            <p>
-              <strong>Web3 Innovation:</strong> Blockchain technology now enables new models for IP protection,
-              attribution, and monetization that make sustainable open-source hardware possible.
-            </p>
-            <p>
-              <strong>Standardization Demand:</strong> As lunar missions multiply, the industry desperately needs
-              interoperable standards to avoid fragmentation and enable collaboration.
-            </p>
-            <p>
-              <strong>Proven Open-Source Success:</strong> From Linux to TensorFlow, open-source has consistently
-              outpaced proprietary alternatives in software. The same can happen in space engineering.
-            </p>
-          </div>
-
-          <!-- Why Now? -->
-          <div class="about-subsection" id="why-now">
-            <h3>Why Now?</h3>
-            <p style="margin-bottom: var(--space-lg);">
-              Several technological and market forces are converging to make this the perfect moment for open-source
-              lunar engineering:
-            </p>
-
-            <div
-              style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); margin-top: var(--space-lg);">
-              <!-- Hardware Abundance -->
+        </section>
+        <section id="products" class="section-padding bg-bg-secondary">
+          <div class="max-w-7xl mx-auto container-padding">
+            <div class="text-center mb-16" style="opacity: 1; transform: none;"><span
+                class="text-xs font-medium tracking-[0.2em] text-text-secondary uppercase mb-4 block">Our
+                Ecosystem</span>
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary">Three Pillars of Lunar
+                Engineering</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div
-                style="padding: var(--space-xl); background: var(--color-gray-50); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
-                <h4 style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-md);">Hardware
-                  Abundance</h4>
-                <p style="color: var(--color-gray-600); line-height: 1.7;">
-                  Starship & New Glenn drive launch costs to &lt;$100/kg, ending the scarcity era. 450+ lunar missions
-                  are planned through 2035.
-                </p>
+                class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full border border-black/5"
+                style="opacity: 1; transform: none;">
+                <div class="mb-6"><span
+                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Where We
+                    Simulate</span>
+                  <h3 class="text-2xl font-medium text-text-primary mb-4">LunCoSim</h3>
+                  <p class="text-text-secondary leading-relaxed">Professional-grade lunar mission simulator with a
+                    modern, user-friendly interface. Model complex systems like rovers and habitats with
+                    physics-accurate lunar environments. Open-source and built for collaboration.</p>
+                </div>
+                <div class="mt-auto"><a href="#luncosim"
+                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-cosmic-orange transition-colors group/link">Learn
+                    More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1"
+                      aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg></a></div>
               </div>
-
-              <!-- AI Training Demand -->
               <div
-                style="padding: var(--space-xl); background: var(--color-gray-50); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
-                <h4 style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-md);">AI Training
-                  Demand</h4>
-                <p style="color: var(--color-gray-600); line-height: 1.7;">
-                  AI agents need physics-accurate digital twins. We provide the "gym" for this new AI space workforce.
-                </p>
+                class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full border border-black/5"
+                style="opacity: 1; transform: none;">
+                <div class="mb-6"><span
+                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">What We
+                    Simulate</span>
+                  <h3 class="text-2xl font-medium text-text-primary mb-4">LORS</h3>
+                  <p class="text-text-secondary leading-relaxed">Lunar Open Robotics Standard—modular, customizable
+                    rover platform with community-driven validation. We're launching a 2kg rover in 3 years to prove our
+                    standards and simulator accuracy.</p>
+                </div>
+                <div class="mt-auto"><a href="#lors"
+                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-cosmic-orange transition-colors group/link">Learn
+                    More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1"
+                      aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg></a></div>
               </div>
-
-              <!-- DeSci Maturity -->
               <div
-                style="padding: var(--space-xl); background: var(--color-gray-50); border-radius: 12px; border: 1px solid rgba(0,0,0,0.05);">
-                <h4 style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-md);">DeSci Maturity
-                </h4>
-                <p style="color: var(--color-gray-600); line-height: 1.7;">
-                  The $1B+ DeSci market proves on-chain mechanisms can fund via IP-NFTs and govern hard-tech and DAOs.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- The Solution -->
-          <div class="about-subsection" id="solution">
-            <h3>The Solution</h3>
-            <p>
-              LunCo's integrated ecosystem solves these challenges through three interconnected platforms:
-            </p>
-            <p>
-              <strong>LunCoSim:</strong> Professional-grade simulation software that's open-source and user-friendly.
-              Engineers can model lunar systems with the same accuracy as proprietary tools, but with zero licensing
-              costs and full transparency.
-            </p>
-            <p>
-              <strong>LORS (Lunar Open Robotics Standard):</strong> A comprehensive standard for modular lunar robotics
-              that enables interoperability and rapid prototyping. By launching a real rover to validate our standards,
-              we prove that open-source space engineering works.
-            </p>
-            <p>
-              <strong>CosmiFi:</strong> A Web3 marketplace where engineers can share blueprints as NFTs, maintaining IP
-              rights while enabling composability. When someone builds on your work, you automatically receive
-              attribution and royalties.
-            </p>
-            <p>
-              Together, these platforms create a flywheel: simulate in LunCoSim, standardize with LORS, share on
-              CosmiFi. Each component strengthens the others, building a sustainable ecosystem for open-source lunar
-              engineering.
-            </p>
-          </div>
-
-          <!-- Our Approach -->
-          <div class="about-subsection" id="approach">
-            <h3>Our Approach</h3>
-            <p>
-              <strong>Open-Source First:</strong> All our core software is open-source, enabling transparency, community
-              contributions, and trust. We believe the best engineering happens when everyone can see, modify, and
-              improve the tools.
-            </p>
-            <p>
-              <strong>Community-Driven Validation:</strong> We're not just publishing standards—we're proving them work
-              by launching a real rover to the Moon. This community-funded mission will validate both our simulator and
-              our standards.
-            </p>
-            <p>
-              <strong>Standards-Driven Interoperability:</strong> LORS provides the common language that enables
-              different teams and organizations to work together seamlessly, accelerating innovation through
-              collaboration.
-            </p>
-            <p>
-              <strong>Web3-Enabled Sustainability:</strong> By using NFTs and smart contracts, we solve the fundamental
-              challenge of open-source hardware: how to reward contributors while maintaining openness.
-            </p>
-            <p>
-              <strong>Professional Quality, Accessible Pricing:</strong> We refuse to compromise on quality. LunCo tools
-              match or exceed proprietary alternatives in capability while being free and open to all.
-            </p>
-          </div>
-
-          <!-- Team Section -->
-          <div class="about-subsection" id="team">
-            <h3>Team</h3>
-            <p style="margin-bottom: var(--space-2xl);">
-              LunCo is built by a passionate team of space engineers, software developers, and Web3 innovators united by
-              the vision of democratizing lunar exploration.
-            </p>
-
-            <div class="team-grid">
-              <div class="team-card">
-                <div class="team-photo"><img src="Rod Mamin.png" alt="Rod Mamin"
-                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; transform: scale(1.20);">
+                class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full border border-black/5"
+                style="opacity: 1; transform: none;">
+                <div class="mb-6"><span
+                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Where We
+                    Share</span>
+                  <h3 class="text-2xl font-medium text-text-primary mb-4">CosmiFi</h3>
+                  <p class="text-text-secondary leading-relaxed">Marketplace for engineering blueprints with NFT-based
+                    IP protection. Think "Zora for Engineers"—composable assets, decentralized sharing, and monetization
+                    for open-source contributors.</p>
                 </div>
-                <h4 class="team-name">Rod Mamin</h4>
-                <p class="team-role">CEO, Founder</p>
-                <p class="team-bio">
-                  Space Systems Engineer: Designed hardware for actual Moon missions. Key Projects: Asagumo rover at
-                  Spacebit, Liberland Space Agency Program Director.
-                </p>
-                <a href="https://www.linkedin.com/in/inthecosmos/" target="_blank" class="team-linkedin">LinkedIn</a>
+                <div class="mt-auto"><a href="#cosmifi"
+                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-cosmic-orange transition-colors group/link">Learn
+                    More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1"
+                      aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg></a></div>
               </div>
-
-              <div class="team-card">
-                <div class="team-photo"><img src="Rina Faber.png" alt="Rina Faber"
-                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; transform: scale(1.20);">
+            </div>
+          </div>
+        </section>
+        <section id="luncosim" class="section-padding bg-white">
+          <div class="max-w-4xl mx-auto container-padding" style="opacity: 1; transform: none;">
+            <div class="flex justify-center mb-12"><img alt="LunCoSim" class="h-24 w-auto"
+                src="./images/luncosimlogo.svg"></div>
+            <p class="text-xl text-text-primary mb-8 text-center sm:text-left">LunCoSim is a professional-grade lunar
+              simulation platform designed to be both powerful for experts and accessible for newcomers. Built on
+              open-source principles, it provides a modern interface for modeling, testing, and validating lunar
+              systems.</p>
+            <h4 class="text-2xl font-normal text-text-primary mt-16 mb-8">Key Capabilities</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
+                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">Physics-Accurate Lunar Environment</h5>
+                <p class="text-text-secondary leading-relaxed">Realistic gravity, regolith mechanics, and radiation
+                  modeling for true-to-life simulations.</p>
+              </div>
+              <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
+                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">Modular System Design</h5>
+                <p class="text-text-secondary leading-relaxed">Build rovers, habitats, and infrastructure from
+                  composable components.</p>
+              </div>
+              <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
+                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">Real-Time Collaboration</h5>
+                <p class="text-text-secondary leading-relaxed">Work with teams globally on shared simulations in
+                  real-time.</p>
+              </div>
+              <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
+                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">LORS Integration</h5>
+                <p class="text-text-secondary leading-relaxed">Native support for Lunar Open Robotics Standards.</p>
+              </div>
+            </div>
+            <h4 class="text-2xl font-normal text-text-primary mt-20 mb-6">For Professionals</h4>
+            <p class="text-text-secondary mb-8 leading-relaxed">LunCoSim provides advanced simulation capabilities
+              including thermal analysis, power system modeling, communication link budgets, and trajectory planning.
+              Our solver engine supports multi-physics simulations with customizable fidelity levels, allowing you to
+              balance accuracy and computational efficiency.</p>
+            <div class="mt-16 text-center"><a href="https://github.com/LunCoSim/lunco-sim" target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors bg-cosmic-orange rounded-full hover:bg-cosmic-orange/90">View
+                on GitHub</a></div>
+          </div>
+        </section>
+        <section class="p-0 m-0"><img alt="LORS Rover" class="w-full h-auto block" src="./images/rover-hero.png">
+        </section>
+        <section id="lors" class="section-padding bg-bg-secondary">
+          <div class="max-w-4xl mx-auto container-padding" style="opacity: 1; transform: none;">
+            <p class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-2 text-center block">What We
+              Simulate</p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary text-center mb-16">LORS: Lunar
+              Open Robotics Standard</h2>
+            <p class="text-xl text-text-primary mb-12 text-center sm:text-left">LORS is more than a rover—it's a
+              comprehensive standard for modular, interoperable lunar robotics. Built with community validation at its
+              core, we're proving our approach by launching a real 2kg rover to the Moon within 3 years.</p>
+            <h4 class="text-2xl font-normal text-text-primary mt-20 mb-6">Why LORS Matters</h4>
+            <p class="text-text-secondary mb-8 leading-relaxed">Traditional space hardware is proprietary, expensive,
+              and incompatible. LORS changes this by establishing open standards that enable rapid prototyping, cost
+              reduction through modularity, and global collaboration. When our rover successfully operates on the lunar
+              surface, it will validate both our simulator and our standards—proving that open-source space engineering
+              works.</p>
+            <p class="text-text-secondary mb-8 leading-relaxed">This initiative is in collaboration with <a
+                href="https://www.moondao.com/" target="_blank" rel="noopener noreferrer"
+                class="text-cosmic-orange font-medium hover:underline">MoonDAO</a>, the world's largest decentralized
+              space program.</p>
+            <p class="mb-12"><a href="https://github.com/Official-MoonDao/LORS" target="_blank"
+                rel="noopener noreferrer" class="text-cosmic-orange font-medium hover:underline">View the LORS
+                Repository on GitHub →</a></p>
+            <h4 class="text-2xl font-normal text-text-primary mt-16 mb-6">Technical Specifications</h4>
+            <ul class="list-none p-0 m-0 space-y-3 text-text-secondary">
+              <li class="py-1"><strong class="text-text-primary">Mass:</strong> 2kg (Phase 1 rover)</li>
+              <li class="py-1"><strong class="text-text-primary">Architecture:</strong> Modular subsystems with
+                standardized interfaces</li>
+              <li class="py-1"><strong class="text-text-primary">Power:</strong> Solar + battery hybrid system</li>
+              <li class="py-1"><strong class="text-text-primary">Communication:</strong> Direct-to-Earth and
+                relay-compatible</li>
+              <li class="py-1"><strong class="text-text-primary">Launch Timeline:</strong> 3 years (community-driven
+                development)</li>
+            </ul>
+            <div class="mt-20 text-center"><a href="https://tally.so/r/3jX6aE" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors bg-cosmic-orange rounded-full hover:bg-cosmic-orange/90">Join
+                LORS Development</a></div>
+          </div>
+        </section>
+        <section id="cosmifi" class="section-padding bg-white">
+          <div class="max-w-4xl mx-auto container-padding" style="opacity: 1; transform: none;">
+            <p class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-2 text-center block">Where
+              We Share</p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary text-center mb-16">CosmiFi</h2>
+            <p class="text-xl text-text-primary mb-12 text-center sm:text-left">CosmiFi is a Web3-enabled marketplace
+              for engineering blueprints and IP. We're solving the fundamental challenge of open-source hardware: how do
+              creators get recognized and compensated for their work?</p>
+            <h4 class="text-2xl font-normal text-text-primary mt-20 mb-6">NFT Blueprints: Composable Engineering IP</h4>
+            <p class="text-text-secondary mb-12 leading-relaxed">Every system is made of subsystems. CosmiFi's NFT
+              Blueprints are composable—when you use someone's motor design in your rover, the attribution and value
+              flow are automatically tracked. Think of it as "Zora for Engineers": a decentralized platform where
+              creators maintain ownership while enabling collaboration.</p>
+            <h4 class="text-2xl font-normal text-text-primary mt-16 mb-12 text-center">How It Works</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
+              <div class="p-4">
+                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Create</h5>
+                <p class="text-text-secondary leading-relaxed">Design in LunCoSim and mint as NFT Blueprint</p>
+              </div>
+              <div class="p-4">
+                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Share</h5>
+                <p class="text-text-secondary leading-relaxed">List on CosmiFi marketplace with licensing terms</p>
+              </div>
+              <div class="p-4">
+                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Compose</h5>
+                <p class="text-text-secondary leading-relaxed">Others build on your work with automatic attribution</p>
+              </div>
+              <div class="p-4">
+                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Earn</h5>
+                <p class="text-text-secondary leading-relaxed">Receive royalties when your components are used</p>
+              </div>
+            </div>
+            <div class="mt-20 text-center"><a href="https://github.com/LunCoSim/CosmiFi" target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors bg-bg-dark rounded-full hover:bg-bg-dark/90">View
+                on GitHub</a></div>
+          </div>
+        </section>
+        <section id="about" class="section-padding bg-white relative">
+          <div class="max-w-7xl mx-auto container-padding">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
+              <div class="lg:w-3/4">
+                <div id="our-story" class="scroll-mt-32 mb-32 last:mb-0">
+                  <h3 class="text-3xl font-medium text-text-primary mb-8">Our Story</h3>
+                  <div class="text-lg text-text-secondary leading-relaxed space-y-6">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                      <div class="w-full md:w-1/3 aspect-[3/4] bg-bg-secondary rounded-2xl overflow-hidden shrink-0">
+                        <img alt="Rod Mamin" class="w-full h-full object-cover" src="./images/rod-mamin.png">
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="text-2xl sm:text-3xl font-light leading-tight mb-6 text-text-primary">What drove Rod
+                          Mamin to <span class="text-cosmic-orange">build an open-source space engineering
+                            platform?</span></h4>
+                        <p class="mb-4">Rod Mamin spent years designing hardware for actual Moon missions, working on
+                          projects like the Asagumo rover at Spacebit and serving as Liberland Space Agency Program
+                          Director. Throughout his career, he witnessed firsthand how fragmented tools, trapped
+                          intellectual property, and proprietary systems were stifling innovation in space engineering.
+                        </p><button
+                          class="text-cosmic-orange font-medium hover:underline mt-2 inline-flex items-center">Read the
+                          full story →</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h4 class="team-name">Rina Faber</h4>
-                <p class="team-role">COO</p>
-                <p class="team-bio">
-                  Space Expert: PhD researcher in planetary science and space medicine. Key Projects: ExoMars payload
-                  program, Luna-26 mission planning.
-                </p>
-                <a href="https://www.linkedin.com/in/rina-faber/" target="_blank" class="team-linkedin">LinkedIn</a>
-              </div>
-
-              <div class="team-card">
-                <div class="team-photo"><img src="Aleksa.png" alt="Aleksa Đurđević"
-                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; transform: scale(1.20);">
+                <div id="challenge" class="scroll-mt-32 mb-32 last:mb-0">
+                  <h3 class="text-3xl font-medium text-text-primary mb-8">Challenge</h3>
+                  <div class="text-lg text-text-secondary leading-relaxed space-y-6">
+                    <p>The $1.8T space economy relies on an outdated, closed-source infrastructure that actively
+                      prevents global collaboration and efficiency.</p>
+                    <ul class="space-y-4 list-none pl-0">
+                      <li><strong class="text-text-primary">Fragmented &amp; Costly Tools:</strong> Engineers waste most
+                        of their time on version-control hell, email chains, and translating files between 15+
+                        disconnected tools.</li>
+                      <li><strong class="text-text-primary">Trapped IP &amp; Wasted Effort:</strong> Component designs
+                        are trapped. Teams spend billions reinventing basic parts because IP cannot be licensed,
+                        exchanged, or reused with verifiable ownership.</li>
+                      <li><strong class="text-text-primary">The Valley of Death:</strong> The most innovative
+                        open-source hardware and DeSci projects die. They fit the slow-grant model (too slow) or the VC
+                        model (no IP moat).</li>
+                    </ul>
+                  </div>
                 </div>
-                <h4 class="team-name">Aleksa Đurđević</h4>
-                <p class="team-role">Project Manager</p>
-                <p class="team-bio">
-                  Space Architect: Designing habitats and systems for Moon, Mars. Key Projects: Europa radiation
-                  shielding, lunar regolith construction.
-                </p>
-                <a href="https://www.linkedin.com/in/aleksa-djurdjevic/" target="_blank"
-                  class="team-linkedin">LinkedIn</a>
+                <div id="opportunity" class="scroll-mt-32 mb-32 last:mb-0">
+                  <h3 class="text-3xl font-medium text-text-primary mb-8">Opportunity</h3>
+                  <div class="text-lg text-text-secondary leading-relaxed space-y-6">
+                    <p>The lunar economy is projected to reach $170 billion by 2040, driven by renewed government
+                      interest (Artemis program), commercial ventures, and international competition. This creates an
+                      unprecedented opportunity for open-source solutions.</p>
+                    <ul class="space-y-4 list-none pl-0">
+                      <li><strong class="text-text-primary">Global Talent Pool:</strong> Millions of engineers,
+                        researchers, and enthusiasts worldwide want to contribute to space exploration but lack access
+                        to professional tools.</li>
+                      <li><strong class="text-text-primary">Web3 Innovation:</strong> Blockchain technology now enables
+                        new models for IP protection, attribution, and monetization that make sustainable open-source
+                        hardware possible.</li>
+                      <li><strong class="text-text-primary">Standardization Demand:</strong> As lunar missions multiply,
+                        the industry desperately needs interoperable standards to avoid fragmentation and enable
+                        collaboration.</li>
+                      <li><strong class="text-text-primary">Proven Open-Source Success:</strong> From Linux to
+                        TensorFlow, open-source has consistently outpaced proprietary alternatives in software. The same
+                        can happen in space engineering.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="why-now" class="scroll-mt-32 mb-32 last:mb-0">
+                  <h3 class="text-3xl font-medium text-text-primary mb-8">Why Now?</h3>
+                  <div class="text-lg text-text-secondary leading-relaxed space-y-6">
+                    <p class="mb-8">Several technological and market forces are converging to make this the perfect
+                      moment for open-source lunar engineering:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div class="p-6 bg-bg-secondary rounded-xl border border-black/5">
+                        <h4 class="text-lg font-semibold text-text-primary mb-3">Hardware Abundance</h4>
+                        <p class="text-base text-text-secondary">Starship &amp; New Glenn drive launch costs to
+                          &lt;$100/kg, ending the scarcity era. 450+ lunar missions are planned through 2035.</p>
+                      </div>
+                      <div class="p-6 bg-bg-secondary rounded-xl border border-black/5">
+                        <h4 class="text-lg font-semibold text-text-primary mb-3">AI Training Demand</h4>
+                        <p class="text-base text-text-secondary">AI agents need physics-accurate digital twins. We
+                          provide the "gym" for this new AI space workforce.</p>
+                      </div>
+                      <div class="p-6 bg-bg-secondary rounded-xl border border-black/5">
+                        <h4 class="text-lg font-semibold text-text-primary mb-3">DeSci Maturity</h4>
+                        <p class="text-base text-text-secondary">The $1B+ DeSci market proves on-chain mechanisms can
+                          fund via IP-NFTs and govern hard-tech and DAOs.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="solution" class="scroll-mt-32 mb-32 last:mb-0">
+                  <h3 class="text-3xl font-medium text-text-primary mb-8">Solution</h3>
+                  <div class="text-lg text-text-secondary leading-relaxed space-y-6">
+                    <p>LunCo's integrated ecosystem solves these challenges through three interconnected platforms:</p>
+                    <ul class="space-y-6 list-none pl-0">
+                      <li><strong class="text-text-primary block mb-1">LunCoSim:</strong>Professional-grade simulation
+                        software that's open-source and user-friendly. Engineers can model lunar systems with the same
+                        accuracy as proprietary tools, but with zero licensing costs and full transparency.</li>
+                      <li><strong class="text-text-primary block mb-1">LORS (Lunar Open Robotics Standard):</strong>A
+                        comprehensive standard for modular lunar robotics that enables interoperability and rapid
+                        prototyping. By launching a real rover to validate our standards, we prove that open-source
+                        space engineering works.</li>
+                      <li><strong class="text-text-primary block mb-1">CosmiFi:</strong>A Web3 marketplace where
+                        engineers can share blueprints as NFTs, maintaining IP rights while enabling composability. When
+                        someone builds on your work, you automatically receive attribution and royalties.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="approach" class="scroll-mt-32 mb-32 last:mb-0">
+                  <h3 class="text-3xl font-medium text-text-primary mb-8">Approach</h3>
+                  <div class="text-lg text-text-secondary leading-relaxed space-y-6">
+                    <ul class="space-y-4 list-none pl-0">
+                      <li><strong class="text-text-primary">Open-Source First:</strong> All our core software is
+                        open-source, enabling transparency, community contributions, and trust. We believe the best
+                        engineering happens when everyone can see, modify, and improve the tools.</li>
+                      <li><strong class="text-text-primary">Community-Driven Validation:</strong> We're not just
+                        publishing standards—we're proving they work by launching a real rover to the Moon. This
+                        community-funded mission will validate both our simulator and our standards.</li>
+                      <li><strong class="text-text-primary">Standards-Driven Interoperability:</strong> LORS provides
+                        the common language that enables different teams and organizations to work together seamlessly,
+                        accelerating innovation through collaboration.</li>
+                      <li><strong class="text-text-primary">Web3-Enabled Sustainability:</strong> By using NFTs and
+                        smart contracts, we solve the fundamental challenge of open-source hardware: how to reward
+                        contributors while maintaining openness.</li>
+                      <li><strong class="text-text-primary">Professional Quality, Accessible Pricing:</strong> We refuse
+                        to compromise on quality. LunCo tools match or exceed proprietary alternatives in capability
+                        while being free and open to all.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="team" class="scroll-mt-32 mb-32 last:mb-0">
+                  <h3 class="text-3xl font-medium text-text-primary mb-8">Team</h3>
+                  <div class="text-lg text-text-secondary leading-relaxed space-y-6">
+                    <p class="mb-8">LunCo is built by a passionate team of space engineers, software developers, and
+                      Web3 innovators united by the vision of democratizing lunar exploration.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div class="flex flex-col">
+                        <div class="aspect-square rounded-2xl overflow-hidden mb-4 bg-bg-secondary"><img alt="Rod Mamin"
+                            class="w-full h-full object-cover" src="./images/rod-mamin.png"></div>
+                        <div class="flex items-start justify-between">
+                          <div>
+                            <h4 class="text-lg font-medium text-text-primary">Rod Mamin</h4>
+                            <p class="text-cosmic-orange font-medium text-sm mb-2">CEO, Founder</p>
+                          </div><a href="https://www.linkedin.com/in/rod-mamin-2a48a12b/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-text-secondary hover:text-cosmic-orange transition-colors"><svg
+                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="lucide lucide-linkedin w-5 h-5" aria-hidden="true">
+                              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                              </path>
+                              <rect width="4" height="12" x="2" y="9"></rect>
+                              <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        </div>
+                        <p class="text-text-secondary text-sm leading-relaxed">Space Systems Engineer: Designed hardware
+                          for actual Moon missions. Key Projects: Asagumo rover at Spacebit, Liberland Space Agency
+                          Program Director.</p>
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="aspect-square rounded-2xl overflow-hidden mb-4 bg-bg-secondary"><img
+                            alt="Rina Faber" class="w-full h-full object-cover" src="./images/rina-faber.png"></div>
+                        <div class="flex items-start justify-between">
+                          <div>
+                            <h4 class="text-lg font-medium text-text-primary">Rina Faber</h4>
+                            <p class="text-cosmic-orange font-medium text-sm mb-2">COO</p>
+                          </div><a href="https://www.linkedin.com/in/rina-faber/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-text-secondary hover:text-cosmic-orange transition-colors"><svg
+                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="lucide lucide-linkedin w-5 h-5" aria-hidden="true">
+                              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                              </path>
+                              <rect width="4" height="12" x="2" y="9"></rect>
+                              <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        </div>
+                        <p class="text-text-secondary text-sm leading-relaxed">Space Expert: PhD researcher in planetary
+                          science and space medicine. Key Projects: ExoMars payload program, Luna-26 mission planning.
+                        </p>
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="aspect-square rounded-2xl overflow-hidden mb-4 bg-bg-secondary"><img
+                            alt="Aleksa Đurđević" class="w-full h-full object-cover" src="./images/aleksa.png"></div>
+                        <div class="flex items-start justify-between">
+                          <div>
+                            <h4 class="text-lg font-medium text-text-primary">Aleksa Đurđević</h4>
+                            <p class="text-cosmic-orange font-medium text-sm mb-2">Project Manager</p>
+                          </div><a href="https://www.linkedin.com/in/stefan-a-dj/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-text-secondary hover:text-cosmic-orange transition-colors"><svg
+                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                              class="lucide lucide-linkedin w-5 h-5" aria-hidden="true">
+                              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                              </path>
+                              <rect width="4" height="12" x="2" y="9"></rect>
+                              <circle cx="4" cy="4" r="2"></circle>
+                            </svg></a>
+                        </div>
+                        <p class="text-text-secondary text-sm leading-relaxed">Space Architect: Designing habitats and
+                          systems for Moon, Mars. Key Projects: Europa radiation shielding, lunar regolith construction.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden lg:block lg:w-1/4 relative">
+                <div class="sticky top-32">
+                  <nav>
+                    <ul class="space-y-4">
+                      <li><a href="#our-story"
+                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Our
+                          Story</a></li>
+                      <li><a href="#challenge"
+                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Challenge</a>
+                      </li>
+                      <li><a href="#opportunity"
+                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Opportunity</a>
+                      </li>
+                      <li><a href="#why-now"
+                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Why
+                          Now</a></li>
+                      <li><a href="#solution"
+                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Solution</a>
+                      </li>
+                      <li><a href="#approach"
+                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Approach</a>
+                      </li>
+                      <li><a href="#team"
+                          class="block text-lg transition-colors duration-200 text-cosmic-orange font-medium">Team</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
-
-        </div>
-
-        <!-- Sidebar Navigation (positioned right via CSS grid) -->
-        <nav class="about-nav">
-          <ul class="about-nav-list">
-            <li><a href="#our-story" class="about-nav-link active">Our Story</a></li>
-            <li><a href="#challenge" class="about-nav-link">Challenge</a></li>
-            <li><a href="#opportunity" class="about-nav-link">Opportunity</a></li>
-            <li><a href="#why-now" class="about-nav-link">Why Now</a></li>
-            <li><a href="#solution" class="about-nav-link">Solution</a></li>
-            <li><a href="#approach" class="about-nav-link">Approach</a></li>
-            <li><a href="#team" class="about-nav-link">Team</a></li>
-          </ul>
-        </nav>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Opportunities -->
-  <section class="section" id="opportunities" style="padding: var(--space-xl) 0; scroll-margin-top: 80px;">
-    <div class="container">
-      <h2 class="section-title" style="font-size: var(--text-4xl); margin-bottom: var(--space-md);">Shape the Future of
-        Lunar Exploration</h2>
-      <p
-        style="text-align: center; max-width: 700px; margin: 0 auto var(--space-lg); font-size: var(--text-lg); color: var(--color-gray-600);">
-        We're building the future of lunar engineering with passionate contributors worldwide
-      </p>
-
-      <div
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-md); max-width: 1000px; margin: 0 auto;">
-
-        <!-- Project Contributors -->
-        <div class="product-card"
-          style="padding: var(--space-md); display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <h3 class="product-title" style="font-size: var(--text-xl); margin-bottom: var(--space-sm);">Project
-              Contributors</h3>
-            <p class="product-description" style="font-size: var(--text-sm); margin-bottom: var(--space-md);">
-              Join our open-source community. We need software developers, hardware engineers, designers, and technical
-              writers to help build LunCoSim, LORS, and CosmiFi.
-            </p>
-          </div>
-          <a href="https://tally.so/r/3jX6aE" class="btn btn-cosmic" target="_blank" style="width: 100%;">Apply to
-            Contribute</a>
-        </div>
-
-        <!-- Future Careers -->
-        <div class="product-card"
-          style="padding: var(--space-md); display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <h3 class="product-title" style="font-size: var(--text-xl); margin-bottom: var(--space-sm);">Future Careers
-            </h3>
-            <p class="product-description" style="font-size: var(--text-sm); margin-bottom: var(--space-md);">
-              As we grow, we'll be hiring full-time team members. Stay updated on future opportunities in engineering,
-              product, and community roles.
-            </p>
-          </div>
-          <a href="#" class="btn btn-secondary" style="width: 100%;">Join Mailing List</a>
-        </div>
-
-        <!-- Partnerships -->
-        <div class="product-card"
-          style="padding: var(--space-md); display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <h3 class="product-title" style="font-size: var(--text-xl); margin-bottom: var(--space-sm);">Building the
-              Future Together</h3>
-            <p class="product-description" style="font-size: var(--text-sm); margin-bottom: var(--space-md);">
-              Interested in research partnerships, industry collaborations, or academic affiliations? Let's explore how
-              we
-              can work together.
-            </p>
-          </div>
-          <a href="#" class="btn btn-secondary" style="width: 100%;">Become a Partner</a>
-        </div>
-
-      </div>
-
-
-    </div>
-    </div>
-  </section>
-
-  <!-- Newsroom/Blog -->
-  <section class="section" id="newsroom" style="background: var(--color-gray-100);">
-    <div class="container">
-      <h2 class="section-title">Blog</h2>
-
-      <div style="margin-top: var(--space-3xl);">
-        <!-- Category Filter -->
-        <div
-          style="display: flex; gap: var(--space-sm); justify-content: center; flex-wrap: wrap; margin-bottom: var(--space-2xl);">
-          <button class="btn btn-secondary" style="font-size: var(--text-sm);">All</button>
-          <button class="btn btn-secondary" style="font-size: var(--text-sm);">Product Updates</button>
-          <button class="btn btn-secondary" style="font-size: var(--text-sm);">Technical</button>
-          <button class="btn btn-secondary" style="font-size: var(--text-sm);">Community</button>
-          <button class="btn btn-secondary" style="font-size: var(--text-sm);">Industry News</button>
-        </div>
-
-        <!-- Blog Posts Grid -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-xl);">
-
-          <div class="product-card">
-            <div
-              style="width: 100%; height: 200px; border-radius: 12px; margin-bottom: var(--space-md); overflow: hidden;">
-              <img src="Screenshot at 2025-03-22 15-08-44.jpg" alt="LunCoSim Beta Launch"
-                style="width: 100%; height: 100%; object-fit: cover;">
+        </section>
+        <section id="roadmap" class="section-padding bg-white">
+          <div class="max-w-4xl mx-auto container-padding">
+            <div class="text-center mb-16" style="opacity: 1; transform: none;"><span
+                class="text-xs font-medium tracking-[0.2em] text-text-secondary uppercase mb-4 block">Our Journey</span>
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary">Roadmap to Lunar Bases</h2>
             </div>
-            <p class="product-tagline">Product Updates</p>
-            <h4 style="margin-bottom: var(--space-sm);">LunCoSim Beta Launch</h4>
-            <p style="color: var(--color-gray-600); font-size: var(--text-base); margin-bottom: var(--space-md);">
-              We're excited to announce the beta release of LunCoSim. Try our lunar simulation platform and share your
-              feedback.
-            </p>
-            <a href="#" style="color: var(--color-cosmic-orange); font-weight: 500;">Read more →</a>
-          </div>
-
-          <div class="product-card">
-            <div
-              style="width: 100%; height: 200px; border-radius: 12px; margin-bottom: var(--space-md); overflow: hidden;">
-              <img src="Screenshot at 2025-03-23 19-38-27.png" alt="Building Modular Rovers with LORS"
-                style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="relative" style="opacity: 1;">
+              <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-border-light md:-translate-x-1/2"></div>
+              <div class="space-y-12">
+                <div class="relative flex items-start gap-8 md:flex-row" style="opacity: 1; transform: none;">
+                  <div
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    1</div>
+                  <div class="ml-20 md:ml-0 md:w-5/12 md:text-right md:pr-12">
+                    <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
+                      <h3 class="text-xl font-medium text-text-primary mb-2">Platform Development</h3>
+                      <p class="text-text-secondary">Building LunCoSim, LORS standards, and CosmiFi beta.</p>
+                    </div>
+                  </div>
+                  <div class="hidden md:block md:w-5/12"></div>
+                </div>
+                <div class="relative flex items-start gap-8 md:flex-row-reverse" style="opacity: 1; transform: none;">
+                  <div
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    2</div>
+                  <div class="ml-20 md:ml-0 md:w-5/12 md:text-left md:pl-12">
+                    <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
+                      <h3 class="text-xl font-medium text-text-primary mb-2">Rover Design</h3>
+                      <p class="text-text-secondary">Community-driven design &amp; prototyping of 2kg LORS rover.</p>
+                    </div>
+                  </div>
+                  <div class="hidden md:block md:w-5/12"></div>
+                </div>
+                <div class="relative flex items-start gap-8 md:flex-row" style="opacity: 1; transform: none;">
+                  <div
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    3</div>
+                  <div class="ml-20 md:ml-0 md:w-5/12 md:text-right md:pr-12">
+                    <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
+                      <h3 class="text-xl font-medium text-text-primary mb-2">Lunar Mission</h3>
+                      <p class="text-text-secondary">Launch LORS rover to Moon for live validation.</p>
+                    </div>
+                  </div>
+                  <div class="hidden md:block md:w-5/12"></div>
+                </div>
+                <div class="relative flex items-start gap-8 md:flex-row-reverse" style="opacity: 1; transform: none;">
+                  <div
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    4</div>
+                  <div class="ml-20 md:ml-0 md:w-5/12 md:text-left md:pl-12">
+                    <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
+                      <h3 class="text-xl font-medium text-text-primary mb-2">Standard Adoption</h3>
+                      <p class="text-text-secondary">Space agencies &amp; industry adopt LORS standards.</p>
+                    </div>
+                  </div>
+                  <div class="hidden md:block md:w-5/12"></div>
+                </div>
+                <div class="relative flex items-start gap-8 md:flex-row" style="opacity: 1; transform: none;">
+                  <div
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    5</div>
+                  <div class="ml-20 md:ml-0 md:w-5/12 md:text-right md:pr-12">
+                    <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
+                      <h3 class="text-xl font-medium text-text-primary mb-2">Lunar Bases</h3>
+                      <p class="text-text-secondary">LunCo ecosystem powers permanent infrastructure.</p>
+                    </div>
+                  </div>
+                  <div class="hidden md:block md:w-5/12"></div>
+                </div>
+              </div>
             </div>
-            <p class="product-tagline">Technical</p>
-            <h4 style="margin-bottom: var(--space-sm);">Building Modular Rovers with LORS</h4>
-            <p style="color: var(--color-gray-600); font-size: var(--text-base); margin-bottom: var(--space-md);">
-              Deep dive into the technical architecture of LORS and how modularity enables rapid prototyping.
-            </p>
-            <a href="#" style="color: var(--color-cosmic-orange); font-weight: 500;">Read more →</a>
           </div>
-
-          <div class="product-card">
-            <div
-              style="width: 100%; height: 200px; border-radius: 12px; margin-bottom: var(--space-md); overflow: hidden;">
-              <img src="Screenshot at 2025-03-23 19-39-03.png" alt="Meet Our Contributors"
-                style="width: 100%; height: 100%; object-fit: cover;">
+        </section>
+        <section id="opportunities" class="section-padding bg-bg-secondary">
+          <div class="max-w-7xl mx-auto container-padding">
+            <div class="text-center mb-16" style="opacity: 1; transform: none;"><span
+                class="text-xs font-medium tracking-[0.2em] text-text-secondary uppercase mb-4 block">Opportunities</span>
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary mb-4">Shape the Future of Lunar
+                Exploration</h2>
+              <p class="text-lg text-text-secondary max-w-2xl mx-auto">We're building the future of lunar engineering
+                with passionate contributors worldwide</p>
             </div>
-            <p class="product-tagline">Community</p>
-            <h4 style="margin-bottom: var(--space-sm);">Meet Our Contributors</h4>
-            <p style="color: var(--color-gray-600); font-size: var(--text-base); margin-bottom: var(--space-md);">
-              Spotlight on the amazing engineers and developers building the future of lunar exploration with us.
-            </p>
-            <a href="#" style="color: var(--color-cosmic-orange); font-weight: 500;">Read more →</a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8" style="opacity: 1;">
+              <div
+                class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                style="opacity: 1; transform: none;">
+                <h3 class="text-xl font-medium text-text-primary mb-4">Project Contributors</h3>
+                <p class="text-text-secondary leading-relaxed mb-8 flex-grow">Join our open-source community. We need
+                  software developers, hardware engineers, designers, and technical writers to help build LunCoSim,
+                  LORS, and CosmiFi.</p><a href="https://tally.so/r/3jX6aE" target="_blank" rel="noopener noreferrer"
+                  data-slot="button" data-variant="default" data-size="default"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full rounded-full group/btn bg-bg-dark text-white hover:bg-bg-dark/90">Apply
+                  to Contribute<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg></a>
+              </div>
+              <div
+                class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                style="opacity: 1; transform: none;">
+                <h3 class="text-xl font-medium text-text-primary mb-4">Future Careers</h3>
+                <p class="text-text-secondary leading-relaxed mb-8 flex-grow">As we grow, we'll be hiring full-time team
+                  members. Stay updated on future opportunities in engineering, product, and community roles.</p><a
+                  href="#" data-slot="button" data-variant="outline" data-size="default"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full rounded-full group/btn border-border-light hover:bg-bg-secondary">Join
+                  Mailing List<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg></a>
+              </div>
+              <div
+                class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                style="opacity: 1; transform: none;">
+                <h3 class="text-xl font-medium text-text-primary mb-4">Building the Future Together</h3>
+                <p class="text-text-secondary leading-relaxed mb-8 flex-grow">Interested in research partnerships,
+                  industry collaborations, or academic affiliations? Let's explore how we can work together.</p><a
+                  href="#" data-slot="button" data-variant="outline" data-size="default"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 w-full rounded-full group/btn border-border-light hover:bg-bg-secondary">Become
+                  a Partner<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg></a>
+              </div>
+            </div>
           </div>
-
-        </div>
-
-        <div style="text-align: center; margin-top: var(--space-2xl);">
-          <a href="#" class="btn btn-primary">View All Articles</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-
-        <!-- About Column -->
-        <div class="footer-column">
-          <h4>LunCo</h4>
-          <p style="color: var(--color-gray-300); font-size: var(--text-sm); margin-bottom: var(--space-md);">
-            Building the gateway to the solar system through open-source lunar engineering.
-          </p>
-          <div style="display: flex; gap: var(--space-sm);">
-            <a href="#" style="color: var(--color-gray-300); font-size: var(--text-xl);">𝕏</a>
-            <a href="#" style="color: var(--color-gray-300); font-size: var(--text-xl);">in</a>
-            <a href="#" style="color: var(--color-gray-300); font-size: var(--text-xl);">GitHub</a>
+        </section>
+        <section id="newsroom" class="section-padding bg-white">
+          <div class="max-w-7xl mx-auto container-padding">
+            <div class="text-center mb-12" style="opacity: 1; transform: none;"><span
+                class="text-xs font-medium tracking-[0.2em] text-text-secondary uppercase mb-4 block">Newsroom</span>
+              <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary">Latest Updates</h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 mb-12" style="opacity: 1; transform: none;"><button
+                class="px-4 py-2 rounded-full text-sm font-medium transition-all bg-bg-dark text-white">All</button><button
+                class="px-4 py-2 rounded-full text-sm font-medium transition-all bg-bg-secondary text-text-secondary hover:bg-bg-dark hover:text-white">Product
+                Updates</button><button
+                class="px-4 py-2 rounded-full text-sm font-medium transition-all bg-bg-secondary text-text-secondary hover:bg-bg-dark hover:text-white">Technical</button><button
+                class="px-4 py-2 rounded-full text-sm font-medium transition-all bg-bg-secondary text-text-secondary hover:bg-bg-dark hover:text-white">Community</button><button
+                class="px-4 py-2 rounded-full text-sm font-medium transition-all bg-bg-secondary text-text-secondary hover:bg-bg-dark hover:text-white">Industry
+                News</button></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" style="opacity: 1;">
+              <article class="group cursor-pointer" style="opacity: 1; transform: none;">
+                <div class="aspect-video rounded-2xl overflow-hidden mb-5"><img alt="LunCoSim Beta Launch"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="./images/blog-1.jpg"></div>
+                <div><span class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Product
+                    Updates</span>
+                  <h3
+                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-cosmic-orange transition-colors">
+                    LunCoSim Beta Launch</h3>
+                  <p class="text-text-secondary leading-relaxed mb-4">We're excited to announce the beta release of
+                    LunCoSim. Try our lunar simulation platform and share your feedback.</p><span
+                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-cosmic-orange transition-colors">Read
+                    more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
+                      aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg></span>
+                </div>
+              </article>
+              <article class="group cursor-pointer" style="opacity: 1; transform: none;">
+                <div class="aspect-video rounded-2xl overflow-hidden mb-5"><img alt="Building Modular Rovers with LORS"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="./images/blog-2.png"></div>
+                <div><span
+                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Technical</span>
+                  <h3
+                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-cosmic-orange transition-colors">
+                    Building Modular Rovers with LORS</h3>
+                  <p class="text-text-secondary leading-relaxed mb-4">Deep dive into the technical architecture of LORS
+                    and how modularity enables rapid prototyping.</p><span
+                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-cosmic-orange transition-colors">Read
+                    more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
+                      aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg></span>
+                </div>
+              </article>
+              <article class="group cursor-pointer" style="opacity: 1; transform: none;">
+                <div class="aspect-video rounded-2xl overflow-hidden mb-5"><img alt="Meet Our Contributors"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="./images/blog-3.png"></div>
+                <div><span
+                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Community</span>
+                  <h3
+                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-cosmic-orange transition-colors">
+                    Meet Our Contributors</h3>
+                  <p class="text-text-secondary leading-relaxed mb-4">Spotlight on the amazing engineers and developers
+                    building the future of lunar exploration with us.</p><span
+                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-cosmic-orange transition-colors">Read
+                    more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
+                      aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg></span>
+                </div>
+              </article>
+            </div>
+            <div class="text-center mt-12" style="opacity: 1; transform: none;"><a href="#"
+                class="inline-flex items-center px-6 py-3 bg-bg-dark text-white rounded-full text-sm font-medium hover:bg-bg-dark/90 transition-colors">View
+                All Articles<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-arrow-right ml-2 w-4 h-4" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg></a></div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-bg-dark text-white">
+        <div class="max-w-7xl mx-auto container-padding py-12">
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+            <div class="md:max-w-xs">
+              <div class="flex items-center gap-2 mb-4"><img alt="LunCo" class="h-8 w-auto brightness-0 invert"
+                  src="./images/luncoblogo.svg"></div>
+              <p class="text-white/60 text-sm leading-relaxed">Building the gateway to the solar system through
+                open-source lunar engineering.</p>
+            </div>
+            <div>
+              <h4 class="font-medium text-sm mb-3">Products</h4>
+              <ul class="space-y-2">
+                <li><a href="#luncosim"
+                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">LunCoSim</a></li>
+                <li><a href="#lors" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">LORS</a>
+                </li>
+                <li><a href="#cosmifi"
+                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">CosmiFi</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-medium text-sm mb-3">Company</h4>
+              <ul class="space-y-2">
+                <li><a href="#about" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">About
+                    Us</a></li>
+                <li><a href="#team" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Team</a>
+                </li>
+                <li><a href="#roadmap"
+                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Roadmap</a></li>
+                <li><a href="#newsroom"
+                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Blog</a></li>
+                <li><a href="#opportunities"
+                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Opportunities</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-medium text-sm mb-3">Resources</h4>
+              <ul class="space-y-2">
+                <li><a href="#"
+                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Documentation</a></li>
+                <li><a href="https://github.com/LunCoSim/lunco-sim" target="_blank" rel="noopener noreferrer"
+                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">GitHub</a></li>
+                <li><a href="#" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Community
+                    Forum</a></li>
+                <li><a href="#" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p class="text-white/40 text-sm">© 2026 LunCo. All rights reserved.</p>
+            <div class="flex gap-6"><a href="#"
+                class="text-white/40 text-sm hover:text-cosmic-orange transition-colors">Privacy Policy</a><a href="#"
+                class="text-white/40 text-sm hover:text-cosmic-orange transition-colors">Terms of Service</a></div>
           </div>
         </div>
-
-        <!-- Products Column -->
-        <div class="footer-column">
-          <h4>Products</h4>
-          <ul class="footer-links">
-            <li><a href="#luncosim" class="footer-link">LunCoSim</a></li>
-            <li><a href="#lors" class="footer-link">LORS</a></li>
-            <li><a href="#cosmifi" class="footer-link">CosmiFi</a></li>
-          </ul>
-        </div>
-
-        <!-- Company Column -->
-        <div class="footer-column">
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="#about" class="footer-link">About Us</a></li>
-            <li><a href="#team" class="footer-link">Team</a></li>
-            <li><a href="#roadmap" class="footer-link">Roadmap</a></li>
-            <li><a href="#newsroom" class="footer-link">Blog</a></li>
-            <li><a href="#opportunities" class="footer-link">Opportunities</a></li>
-          </ul>
-        </div>
-
-        <!-- Resources Column -->
-        <div class="footer-column">
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="#" class="footer-link">Documentation</a></li>
-            <li><a href="https://github.com/LunCoSim/lunco-sim" class="footer-link" target="_blank">GitHub</a></li>
-            <li><a href="#" class="footer-link">Community Forum</a></li>
-            <li><a href="#" class="footer-link">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Newsletter Column -->
-        <div class="footer-column">
-          <h4>Stay Updated</h4>
-          <p style="color: var(--color-gray-300); font-size: var(--text-sm); margin-bottom: var(--space-md);">
-            Get the latest news and updates
-          </p>
-          <form action="https://emailoctopus.com/lists/36b79094-fbf5-11ef-8268-35ea1b356baf/members/embedded/1.3s/add"
-            method="post" style="display: flex; gap: var(--space-xs);">
-            <input type="email" name="emailAddress" placeholder="Your email" required
-              style="flex: 1; padding: var(--space-sm); border-radius: 8px; border: 1px solid var(--color-gray-600); background: var(--color-gray-900); color: white; font-size: var(--text-sm);">
-            <button type="submit" class="btn btn-primary" style="padding: var(--space-sm) var(--space-md);">→</button>
-          </form>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 LunCo. All rights reserved. | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#"
-            class="footer-link">Terms of Service</a></p>
-      </div>
+      </footer>
     </div>
-  </footer>
+  </div>
 
-  <!-- JavaScript -->
-  <script src="index.js"></script>
 
 </body>
 
