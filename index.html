@@ -80,6 +80,18 @@
       transform: translateY(0);
     }
 
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-right.active,
+    .active .reveal-right {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
     /* Hero Entrance Animations */
     .hero-reveal {
       opacity: 0;
@@ -372,7 +384,7 @@
                 Lunar Infrastructure. <span class="standard-orange-text">Opensourced.</span></h1>
             </div>
             <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed hero-reveal"
-              style="transition-delay: 0.2s;">An open ecosystem for mission simulation, robotics standards, and
+              style="transition-delay: 0.2s;">An open ecosystem for mission simulation, rover standards, and
               blueprint sharing.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center hero-reveal" style="transition-delay: 0.4s;"><a
                 href="https://alpha.lunco.space/" target="_blank" rel="noopener noreferrer" data-slot="button"
@@ -512,7 +524,7 @@
               </div>
               <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
                 <h5 class="text-lg font-semibold standard-orange-text mb-3">LORS Integration</h5>
-                <p class="text-text-secondary leading-relaxed">Native support for Lunar Open Robotics Standards.</p>
+                <p class="text-text-secondary leading-relaxed">Native support for Lunar Open Rover Standards.</p>
               </div>
             </div>
             <h4 class="text-2xl font-normal text-text-primary mt-20 mb-6">For Professionals</h4>
@@ -836,8 +848,8 @@
                   </div>
                 </div>
               </div>
-              <div class="hidden lg:block lg:w-1/4 relative">
-                <div class="sticky top-32">
+              <div class="hidden lg:block lg:w-1/4 relative scroll-mt-32" id="sidebar-reveal">
+                <div class="sticky top-32 reveal-right">
                   <nav>
                     <ul class="space-y-1 text-right">
                       <li><a href="#our-story"
@@ -1228,6 +1240,9 @@
                 }
               }
             });
+          } else {
+            // Remove active class when leaving view to allow "disappearing" effect
+            entry.target.classList.remove('active');
           }
         });
       }, { rootMargin: '-20% 0px -70% 0px' });
