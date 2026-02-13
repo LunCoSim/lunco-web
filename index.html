@@ -260,6 +260,58 @@
     .standard-orange-shadow {
       box-shadow: 0 10px 15px -3px rgba(241, 126, 0, 0.25), 0 4px 6px -2px rgba(241, 126, 0, 0.1) !important;
     }
+
+    /* Gradient Border Animation Style */
+    .gradient-wrapper {
+      position: relative;
+      display: inline-flex;
+      z-index: 10;
+    }
+
+    .gradient-wrapper::before,
+    .gradient-wrapper::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      z-index: -1;
+      border-radius: 9999px;
+      transition: opacity 0.3s ease;
+    }
+
+    .gradient-wrapper::before {
+      background: linear-gradient(90deg, white, #f17e00);
+      opacity: 1;
+    }
+
+    .gradient-wrapper::after {
+      background: linear-gradient(90deg, #f17e00, white);
+      opacity: 0;
+    }
+
+    .gradient-wrapper:hover::before {
+      opacity: 0;
+    }
+
+    .gradient-wrapper:hover::after {
+      opacity: 1;
+    }
+
+    .btn-gradient-inner {
+      background: white;
+      color: #333;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-gradient-inner:hover {
+      color: #f17e00;
+      cursor: pointer;
+    }
   </style>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BCK7ND55P"></script>
@@ -468,10 +520,13 @@
               including thermal analysis, power system modeling, communication link budgets, and trajectory planning.
               Our solver engine supports multi-physics simulations with customizable fidelity levels, allowing you to
               balance accuracy and computational efficiency.</p>
-            <div class="mt-16 text-center"><a href="https://github.com/LunCoSim/lunco-sim" target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors standard-orange-bg rounded-full hover:standard-orange-bg/90">View
-                on GitHub</a></div>
+            <div class="mt-16 text-center">
+              <div class="gradient-wrapper">
+                <a href="https://github.com/LunCoSim/lunco-sim" target="_blank" rel="noopener noreferrer"
+                  class="btn-gradient-inner inline-flex items-center justify-center px-8 py-4 text-sm font-medium">View
+                  on GitHub</a>
+              </div>
+            </div>
           </div>
         </section>
         <section class="p-0 m-0"><img alt="LORS Rover" class="w-full h-auto block" src="./images/rover-hero.png">
@@ -510,9 +565,13 @@
               <li class="py-1"><strong class="text-text-primary">Launch Timeline:</strong> 3 years (community-driven
                 development)</li>
             </ul>
-            <div class="mt-20 text-center"><a href="https://tally.so/r/3jX6aE" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors standard-orange-bg rounded-full hover:standard-orange-bg/90">Join
-                LORS Development</a></div>
+            <div class="mt-20 text-center">
+              <div class="gradient-wrapper">
+                <a href="https://tally.so/r/3jX6aE" target="_blank" rel="noopener noreferrer"
+                  class="btn-gradient-inner inline-flex items-center justify-center px-8 py-4 text-sm font-medium">Join
+                  LORS Development</a>
+              </div>
+            </div>
           </div>
         </section>
         <section id="cosmifi" class="section-padding bg-white">
@@ -547,10 +606,13 @@
                 <p class="text-text-secondary leading-relaxed">Receive royalties when your components are used</p>
               </div>
             </div>
-            <div class="mt-20 text-center"><a href="https://github.com/LunCoSim/CosmiFi" target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors bg-bg-dark rounded-full hover:bg-bg-dark/90">View
-                on GitHub</a></div>
+            <div class="mt-20 text-center">
+              <div class="gradient-wrapper">
+                <a href="https://github.com/LunCoSim/CosmiFi" target="_blank" rel="noopener noreferrer"
+                  class="btn-gradient-inner inline-flex items-center justify-center px-8 py-4 text-sm font-medium">View
+                  on GitHub</a>
+              </div>
+            </div>
           </div>
         </section>
         <section id="about" class="section-padding bg-white relative">
@@ -583,13 +645,10 @@
                             rover blueprints, we are creating an ecosystem where anyone—from students to global space
                             agencies—can contribute to the future of the lunar economy.</p>
                         </div>
-                        <button id="read-more-btn" class="btn-pill-outline mt-6 inline-flex items-center gap-2">Read
-                          full story <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="w-4 h-4">
-                            <path d="M5 12h14"></path>
-                            <path d="m12 5 7 7-7 7"></path>
-                          </svg></button>
+                        <div class="gradient-wrapper mt-6">
+                          <button id="read-more-btn" class="btn-gradient-inner inline-flex items-center gap-2">Read
+                            full story</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1184,7 +1243,7 @@
           if (storyText.classList.contains('expanded')) {
             readMoreBtn.textContent = 'Show less ↑';
           } else {
-            readMoreBtn.textContent = 'Read the full story →';
+            readMoreBtn.textContent = 'Read full story →';
           }
         });
       }
