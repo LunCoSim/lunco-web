@@ -209,6 +209,45 @@
       }
     }
 
+    /* Our Mission - Match Reference */
+    .mission-label {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: rgb(110 110 115);
+      /* Match text-text-secondary */
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      display: block;
+    }
+
+    .mission-headline {
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: rgb(29 29 31);
+      /* Match text-text-primary */
+      max-width: 900px;
+    }
+
+    @media (min-width: 768px) {
+      .mission-headline {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .mission-headline {
+        font-size: 2.5rem;
+      }
+    }
+
+    .mission-highlight {
+      color: #f17e00;
+      /* Project Standard Orange */
+    }
+
 
     /* Reference Style: Pill Button */
     .btn-pill-outline {
@@ -549,7 +588,7 @@
               We
               Simulate</p>
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary text-center mb-16">LORS: Lunar
-              Open Robotics Standard</h2>
+              Open Rover Standard</h2>
             <p class="text-xl text-text-primary mb-12 text-center sm:text-left">LORS is more than a rover—it's a
               comprehensive standard for modular, interoperable lunar robotics. Built with community validation at its
               core, we're proving our approach by launching a real 2kg rover to the Moon within 3 years.</p>
@@ -586,7 +625,7 @@
             </div>
           </div>
         </section>
-        <section id="cosmifi" class="section-padding bg-white">
+        <section id="cosmifi" class="section-padding bg-white" style="padding-bottom: 6rem;">
           <div class="max-w-4xl mx-auto container-padding" style="opacity: 1; transform: none;">
             <p class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-2 text-center block">Where
               We Share</p>
@@ -627,10 +666,16 @@
             </div>
           </div>
         </section>
-        <section id="about" class="section-padding bg-white relative">
+        <section id="about" class="bg-white relative" style="padding-top: 6rem; padding-bottom: 8rem;">
           <div class="max-w-7xl mx-auto container-padding">
             <div class="flex flex-col lg:flex-row gap-12 lg:gap-24 relative">
               <div class="lg:w-3/4">
+                <div id="our-mission" class="mb-24">
+                  <span class="mission-label">Our Mission</span>
+                  <h2 class="mission-headline">Empowering the next generation of lunar exploration by building <span
+                      class="mission-highlight">the world's most reliable, open, and collaborative space engineering
+                      tools</span></h2>
+                </div>
                 <div id="our-story" class="scroll-mt-32 mb-32 last:mb-0">
                   <h2 class="section-title-large text-text-primary mb-16">Our Story</h2>
                   <div class="text-lg text-text-secondary leading-relaxed space-y-6">
@@ -737,7 +782,7 @@
                       <li><strong class="text-text-primary block mb-1">LunCoSim:</strong>Professional-grade simulation
                         software that's open-source and user-friendly. Engineers can model lunar systems with the same
                         accuracy as proprietary tools, but with zero licensing costs and full transparency.</li>
-                      <li><strong class="text-text-primary block mb-1">LORS (Lunar Open Robotics Standard):</strong>A
+                      <li><strong class="text-text-primary block mb-1">LORS (Lunar Open Rover Standard):</strong>A
                         comprehensive standard for modular lunar robotics that enables interoperability and rapid
                         prototyping. By launching a real rover to validate our standards, we prove that open-source
                         space engineering works.</li>
