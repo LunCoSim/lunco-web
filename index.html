@@ -167,7 +167,7 @@
 
     /* Read More Toggle */
     .expandable-text {
-      max-height: 300px;
+      max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s ease;
       position: relative;
@@ -688,12 +688,14 @@
                         <h4 class="story-subtitle mb-6 text-text-primary">What inspired LunCo Founder Rod Mamin to <span
                             class="standard-orange-text">build an open-source space engineering platform?</span></h4>
 
+                        <p class="text-base text-text-secondary leading-relaxed mb-4">Rod Mamin spent years designing
+                          hardware for actual Moon missions, working on
+                          projects like the Asagumo rover at Spacebit and serving as Liberland Space Agency Program
+                          Director. Throughout his career, he witnessed firsthand how fragmented tools, trapped
+                          intellectual property, and proprietary systems were stifling innovation in space
+                          engineering.</p>
+
                         <div class="expandable-text text-base text-text-secondary leading-relaxed" id="story-text">
-                          <p class="mb-4">Rod Mamin spent years designing hardware for actual Moon missions, working on
-                            projects like the Asagumo rover at Spacebit and serving as Liberland Space Agency Program
-                            Director. Throughout his career, he witnessed firsthand how fragmented tools, trapped
-                            intellectual property, and proprietary systems were stifling innovation in space
-                            engineering.</p>
                           <p class="mb-4">This led to the birth of LunCo, where he combined his aerospace expertise with
                             open-source philosophy to create a platform that democratizes access to lunar simulation and
                             robotics. By building LunCoSim and LORS, Rod is ensuring that the next generation of lunar
@@ -1302,9 +1304,9 @@
         readMoreBtn.addEventListener('click', () => {
           storyText.classList.toggle('expanded');
           if (storyText.classList.contains('expanded')) {
-            readMoreBtn.textContent = 'Show less ↑';
+            readMoreBtn.textContent = 'Show less';
           } else {
-            readMoreBtn.textContent = 'Read full story →';
+            readMoreBtn.textContent = 'Read full story';
           }
         });
       }
