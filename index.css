@@ -1983,11 +1983,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .bg-cosmic-orange {
       --tw-bg-opacity: 1;
-      background-color: rgb(249 115 22 / var(--tw-bg-opacity, 1));
+      background-color: rgb(241 126 0 / var(--tw-bg-opacity, 1));
     }
 
     .bg-cosmic-orange\/10 {
-      background-color: rgb(249 115 22 / 0.1);
+      background-color: rgb(241 126 0 / 0.1);
     }
 
     .bg-destructive {
@@ -2443,7 +2443,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .text-cosmic-orange {
       --tw-text-opacity: 1;
-      color: rgb(249 115 22 / var(--tw-text-opacity, 1));
+      color: rgb(241 126 0 / var(--tw-text-opacity, 1));
     }
 
     .text-current {

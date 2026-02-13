@@ -65,7 +65,7 @@
 
     /* Custom Reactive Styles */
     .nav-active {
-      color: #ff5c00 !important;
+      color: #f17e00 !important;
       font-weight: 500;
     }
 
@@ -145,11 +145,11 @@
     .sticky a {
       transition: all 0.3s ease;
       display: block;
-      padding: 0.5rem 0;
+      padding: 0.3rem 0;
     }
 
     .sticky a.nav-active {
-      color: #ff5c00 !important;
+      color: #f17e00 !important;
     }
 
     /* Read More Toggle */
@@ -200,7 +200,7 @@
 
     /* Reference Style: Pill Button */
     .btn-pill-outline {
-      border: 1px solid #ff5c00;
+      border: 1px solid #f17e00;
       background: white;
       color: #333;
       padding: 0.75rem 2rem;
@@ -209,12 +209,12 @@
     }
 
     .btn-pill-outline:hover {
-      background: #ff5c00;
+      background: #f17e00;
       color: white;
     }
 
     .sticky a.nav-active {
-      color: #ff5c00 !important;
+      color: #f17e00 !important;
     }
 
 
@@ -248,6 +248,18 @@
       transform: translateY(-5px);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     }
+
+    .standard-orange-text {
+      color: #f17e00 !important;
+    }
+
+    .standard-orange-bg {
+      background-color: #f17e00 !important;
+    }
+
+    .standard-orange-shadow {
+      box-shadow: 0 10px 15px -3px rgba(241, 126, 0, 0.25), 0 4px 6px -2px rgba(241, 126, 0, 0.1) !important;
+    }
   </style>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BCK7ND55P"></script>
@@ -271,15 +283,16 @@
           <div class="flex items-center justify-between h-[72px]"><a href="" class="flex items-center gap-2"><img
                 alt="LunCo" class="h-8 w-auto" src="./images/luncoblogo.svg"></a>
             <div class="hidden md:flex items-center gap-8"><a href="#about"
-                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">About Us</a><a
-                href="#products"
-                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Products</a><a
+                class="text-sm font-medium transition-colors hover:text-standard-orange-text text-text-primary">About
+                Us</a><a href="#products"
+                class="text-sm font-medium transition-colors hover:text-standard-orange-text text-text-primary">Products</a><a
                 href="#roadmap"
-                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Roadmap</a><a
+                class="text-sm font-medium transition-colors hover:text-standard-orange-text text-text-primary">Roadmap</a><a
                 href="#opportunities"
-                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Opportunities</a><a
+                class="text-sm font-medium transition-colors hover:text-standard-orange-text text-text-primary">Opportunities</a><a
                 href="#newsroom"
-                class="text-sm font-medium transition-colors hover:text-cosmic-orange text-text-primary">Blog</a></div>
+                class="text-sm font-medium transition-colors hover:text-standard-orange-text text-text-primary">Blog</a>
+            </div>
             <div class="hidden md:block"><a href="https://tally.so/r/3jX6aE" target="_blank" rel="noopener noreferrer"
                 data-slot="button" data-variant="default" data-size="default"
                 class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-9 py-2 has-[&gt;svg]:px-3 bg-bg-dark text-white hover:bg-bg-dark/90 rounded-full px-6 transition-transform hover:scale-[1.02]">Join
@@ -304,7 +317,7 @@
             <div class="hero-reveal">
               <h1
                 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight mb-6">
-                Lunar Infrastructure. <span class="text-cosmic-orange">Opensourced.</span></h1>
+                Lunar Infrastructure. <span class="standard-orange-text">Opensourced.</span></h1>
             </div>
             <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed hero-reveal"
               style="transition-delay: 0.2s;">An open ecosystem for mission simulation, robotics standards, and
@@ -358,7 +371,7 @@
                 class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full border border-black/5"
                 style="opacity: 1; transform: none;">
                 <div class="mb-6"><span
-                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Where We
+                    class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-3 block">Where We
                     Simulate</span>
                   <h3 class="text-2xl font-medium text-text-primary mb-4">LunCoSim</h3>
                   <p class="text-text-secondary leading-relaxed">Professional-grade lunar mission simulator with a
@@ -366,7 +379,7 @@
                     physics-accurate lunar environments. Open-source and built for collaboration.</p>
                 </div>
                 <div class="mt-auto"><a href="#luncosim"
-                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-cosmic-orange transition-colors group/link">Learn
+                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-standard-orange-text transition-colors group/link">Learn
                     More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1"
@@ -379,7 +392,7 @@
                 class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full border border-black/5"
                 style="opacity: 1; transform: none;">
                 <div class="mb-6"><span
-                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">What We
+                    class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-3 block">What We
                     Simulate</span>
                   <h3 class="text-2xl font-medium text-text-primary mb-4">LORS</h3>
                   <p class="text-text-secondary leading-relaxed">Lunar Open Robotics Standard—modular, customizable
@@ -387,7 +400,7 @@
                     standards and simulator accuracy.</p>
                 </div>
                 <div class="mt-auto"><a href="#lors"
-                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-cosmic-orange transition-colors group/link">Learn
+                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-standard-orange-text transition-colors group/link">Learn
                     More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1"
@@ -400,7 +413,7 @@
                 class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full border border-black/5"
                 style="opacity: 1; transform: none;">
                 <div class="mb-6"><span
-                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Where We
+                    class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-3 block">Where We
                     Share</span>
                   <h3 class="text-2xl font-medium text-text-primary mb-4">CosmiFi</h3>
                   <p class="text-text-secondary leading-relaxed">Marketplace for engineering blueprints with NFT-based
@@ -408,7 +421,7 @@
                     for open-source contributors.</p>
                 </div>
                 <div class="mt-auto"><a href="#cosmifi"
-                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-cosmic-orange transition-colors group/link">Learn
+                    class="inline-flex items-center text-sm font-medium text-text-primary hover:text-standard-orange-text transition-colors group/link">Learn
                     More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover/link:translate-x-1"
@@ -431,22 +444,22 @@
             <h4 class="text-2xl font-normal text-text-primary mt-16 mb-8">Key Capabilities</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
-                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">Physics-Accurate Lunar Environment</h5>
+                <h5 class="text-lg font-semibold standard-orange-text mb-3">Physics-Accurate Lunar Environment</h5>
                 <p class="text-text-secondary leading-relaxed">Realistic gravity, regolith mechanics, and radiation
                   modeling for true-to-life simulations.</p>
               </div>
               <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
-                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">Modular System Design</h5>
+                <h5 class="text-lg font-semibold standard-orange-text mb-3">Modular System Design</h5>
                 <p class="text-text-secondary leading-relaxed">Build rovers, habitats, and infrastructure from
                   composable components.</p>
               </div>
               <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
-                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">Real-Time Collaboration</h5>
+                <h5 class="text-lg font-semibold standard-orange-text mb-3">Real-Time Collaboration</h5>
                 <p class="text-text-secondary leading-relaxed">Work with teams globally on shared simulations in
                   real-time.</p>
               </div>
               <div class="p-8 bg-bg-secondary rounded-xl border border-black/5">
-                <h5 class="text-lg font-semibold text-cosmic-orange mb-3">LORS Integration</h5>
+                <h5 class="text-lg font-semibold standard-orange-text mb-3">LORS Integration</h5>
                 <p class="text-text-secondary leading-relaxed">Native support for Lunar Open Robotics Standards.</p>
               </div>
             </div>
@@ -457,7 +470,7 @@
               balance accuracy and computational efficiency.</p>
             <div class="mt-16 text-center"><a href="https://github.com/LunCoSim/lunco-sim" target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors bg-cosmic-orange rounded-full hover:bg-cosmic-orange/90">View
+                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors standard-orange-bg rounded-full hover:standard-orange-bg/90">View
                 on GitHub</a></div>
           </div>
         </section>
@@ -465,7 +478,8 @@
         </section>
         <section id="lors" class="section-padding bg-bg-secondary">
           <div class="max-w-4xl mx-auto container-padding" style="opacity: 1; transform: none;">
-            <p class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-2 text-center block">What We
+            <p class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-2 text-center block">What
+              We
               Simulate</p>
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary text-center mb-16">LORS: Lunar
               Open Robotics Standard</h2>
@@ -480,10 +494,10 @@
               works.</p>
             <p class="text-text-secondary mb-8 leading-relaxed">This initiative is in collaboration with <a
                 href="https://www.moondao.com/" target="_blank" rel="noopener noreferrer"
-                class="text-cosmic-orange font-medium hover:underline">MoonDAO</a>, the world's largest decentralized
+                class="standard-orange-text font-medium hover:underline">MoonDAO</a>, the world's largest decentralized
               space program.</p>
             <p class="mb-12"><a href="https://github.com/Official-MoonDao/LORS" target="_blank"
-                rel="noopener noreferrer" class="text-cosmic-orange font-medium hover:underline">View the LORS
+                rel="noopener noreferrer" class="standard-orange-text font-medium hover:underline">View the LORS
                 Repository on GitHub →</a></p>
             <h4 class="text-2xl font-normal text-text-primary mt-16 mb-6">Technical Specifications</h4>
             <ul class="list-none p-0 m-0 space-y-3 text-text-secondary">
@@ -497,13 +511,13 @@
                 development)</li>
             </ul>
             <div class="mt-20 text-center"><a href="https://tally.so/r/3jX6aE" target="_blank" rel="noopener noreferrer"
-                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors bg-cosmic-orange rounded-full hover:bg-cosmic-orange/90">Join
+                class="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white transition-colors standard-orange-bg rounded-full hover:standard-orange-bg/90">Join
                 LORS Development</a></div>
           </div>
         </section>
         <section id="cosmifi" class="section-padding bg-white">
           <div class="max-w-4xl mx-auto container-padding" style="opacity: 1; transform: none;">
-            <p class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-2 text-center block">Where
+            <p class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-2 text-center block">Where
               We Share</p>
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-normal text-text-primary text-center mb-16">CosmiFi</h2>
             <p class="text-xl text-text-primary mb-12 text-center sm:text-left">CosmiFi is a Web3-enabled marketplace
@@ -517,19 +531,19 @@
             <h4 class="text-2xl font-normal text-text-primary mt-16 mb-12 text-center">How It Works</h4>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
               <div class="p-4">
-                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Create</h5>
+                <h5 class="text-xl font-semibold standard-orange-text mb-3">Create</h5>
                 <p class="text-text-secondary leading-relaxed">Design in LunCoSim and mint as NFT Blueprint</p>
               </div>
               <div class="p-4">
-                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Share</h5>
+                <h5 class="text-xl font-semibold standard-orange-text mb-3">Share</h5>
                 <p class="text-text-secondary leading-relaxed">List on CosmiFi marketplace with licensing terms</p>
               </div>
               <div class="p-4">
-                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Compose</h5>
+                <h5 class="text-xl font-semibold standard-orange-text mb-3">Compose</h5>
                 <p class="text-text-secondary leading-relaxed">Others build on your work with automatic attribution</p>
               </div>
               <div class="p-4">
-                <h5 class="text-xl font-semibold text-cosmic-orange mb-3">Earn</h5>
+                <h5 class="text-xl font-semibold standard-orange-text mb-3">Earn</h5>
                 <p class="text-text-secondary leading-relaxed">Receive royalties when your components are used</p>
               </div>
             </div>
@@ -552,7 +566,7 @@
                       </div>
                       <div class="flex-1">
                         <h4 class="story-subtitle mb-6 text-text-primary">What inspired LunCo Founder Rod Mamin to <span
-                            class="text-cosmic-orange">build an open-source space engineering platform?</span></h4>
+                            class="standard-orange-text">build an open-source space engineering platform?</span></h4>
 
                         <div class="expandable-text text-base text-text-secondary leading-relaxed" id="story-text">
                           <p class="mb-4">Rod Mamin spent years designing hardware for actual Moon missions, working on
@@ -570,9 +584,9 @@
                             agencies—can contribute to the future of the lunar economy.</p>
                         </div>
                         <button id="read-more-btn" class="btn-pill-outline mt-6 inline-flex items-center gap-2">Read
-                          full article <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                          full story <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="w-4 h-4">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                           </svg></button>
@@ -581,7 +595,7 @@
                   </div>
                 </div>
                 <div id="challenge" class="scroll-mt-32 mb-32 last:mb-0">
-                  <h3 class="text-3xl font-medium text-text-primary mb-8">The Challenge</h3>
+                  <h2 class="section-title-large text-text-primary mb-16">The Challenge</h2>
                   <div class="text-lg text-text-secondary leading-relaxed space-y-6">
                     <p>The $1.8T space economy relies on an outdated, closed-source infrastructure that actively
                       prevents global collaboration and efficiency.</p>
@@ -599,7 +613,7 @@
                   </div>
                 </div>
                 <div id="opportunity" class="scroll-mt-32 mb-32 last:mb-0">
-                  <h3 class="text-3xl font-medium text-text-primary mb-8">The Opportunity</h3>
+                  <h2 class="section-title-large text-text-primary mb-16">The Opportunity</h2>
                   <div class="text-lg text-text-secondary leading-relaxed space-y-6">
                     <p>The lunar economy is projected to reach $170 billion by 2040, driven by renewed government
                       interest (Artemis program), commercial ventures, and international competition. This creates an
@@ -621,7 +635,7 @@
                   </div>
                 </div>
                 <div id="why-now" class="scroll-mt-32 mb-32 last:mb-0">
-                  <h3 class="text-3xl font-medium text-text-primary mb-8">Why Now?</h3>
+                  <h2 class="section-title-large text-text-primary mb-16">Why Now?</h2>
                   <div class="text-lg text-text-secondary leading-relaxed space-y-6">
                     <p class="mb-8">Several technological and market forces are converging to make this the perfect
                       moment for open-source lunar engineering:</p>
@@ -645,7 +659,7 @@
                   </div>
                 </div>
                 <div id="solution" class="scroll-mt-32 mb-32 last:mb-0">
-                  <h3 class="text-3xl font-medium text-text-primary mb-8">The Solution</h3>
+                  <h2 class="section-title-large text-text-primary mb-16">The Solution</h2>
                   <div class="text-lg text-text-secondary leading-relaxed space-y-6">
                     <p>LunCo's integrated ecosystem solves these challenges through three interconnected platforms:</p>
                     <ul class="space-y-6 list-none pl-0">
@@ -663,7 +677,7 @@
                   </div>
                 </div>
                 <div id="approach" class="scroll-mt-32 mb-32 last:mb-0">
-                  <h3 class="text-3xl font-medium text-text-primary mb-8">The Approach</h3>
+                  <h2 class="section-title-large text-text-primary mb-16">The Approach</h2>
                   <div class="text-lg text-text-secondary leading-relaxed space-y-6">
                     <ul class="space-y-4 list-none pl-0">
                       <li><strong class="text-text-primary">Open-Source First:</strong> All our core software is
@@ -685,7 +699,7 @@
                   </div>
                 </div>
                 <div id="team" class="scroll-mt-32 mb-32 last:mb-0">
-                  <h3 class="text-3xl font-medium text-text-primary mb-8">Team</h3>
+                  <h2 class="section-title-large text-text-primary mb-16">Team</h2>
                   <div class="text-lg text-text-secondary leading-relaxed space-y-6">
                     <p class="mb-8">LunCo is built by a passionate team of space engineers, software developers, and
                       Web3 innovators united by the vision of democratizing lunar exploration.</p>
@@ -696,10 +710,10 @@
                         <div class="flex items-start justify-between">
                           <div>
                             <h4 class="text-lg font-medium text-text-primary">Rod Mamin</h4>
-                            <p class="text-cosmic-orange font-medium text-sm mb-2">CEO, Founder</p>
+                            <p class="standard-orange-text font-medium text-sm mb-2">CEO, Founder</p>
                           </div><a href="https://www.linkedin.com/in/rod-mamin-2a48a12b/" target="_blank"
                             rel="noopener noreferrer"
-                            class="text-text-secondary hover:text-cosmic-orange transition-colors"><svg
+                            class="text-text-secondary hover:text-standard-orange-text transition-colors"><svg
                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                               class="lucide lucide-linkedin w-5 h-5" aria-hidden="true">
@@ -719,10 +733,10 @@
                         <div class="flex items-start justify-between">
                           <div>
                             <h4 class="text-lg font-medium text-text-primary">Rina Faber</h4>
-                            <p class="text-cosmic-orange font-medium text-sm mb-2">COO</p>
+                            <p class="standard-orange-text font-medium text-sm mb-2">COO</p>
                           </div><a href="https://www.linkedin.com/in/rina-faber/" target="_blank"
                             rel="noopener noreferrer"
-                            class="text-text-secondary hover:text-cosmic-orange transition-colors"><svg
+                            class="text-text-secondary hover:text-standard-orange-text transition-colors"><svg
                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                               class="lucide lucide-linkedin w-5 h-5" aria-hidden="true">
@@ -742,10 +756,10 @@
                         <div class="flex items-start justify-between">
                           <div>
                             <h4 class="text-lg font-medium text-text-primary">Aleksa Đurđević</h4>
-                            <p class="text-cosmic-orange font-medium text-sm mb-2">Project Manager</p>
+                            <p class="standard-orange-text font-medium text-sm mb-2">Project Manager</p>
                           </div><a href="https://www.linkedin.com/in/stefan-a-dj/" target="_blank"
                             rel="noopener noreferrer"
-                            class="text-text-secondary hover:text-cosmic-orange transition-colors"><svg
+                            class="text-text-secondary hover:text-standard-orange-text transition-colors"><svg
                               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                               class="lucide lucide-linkedin w-5 h-5" aria-hidden="true">
@@ -766,27 +780,27 @@
               <div class="hidden lg:block lg:w-1/4 relative">
                 <div class="sticky top-32">
                   <nav>
-                    <ul class="space-y-4 text-right">
+                    <ul class="space-y-1 text-right">
                       <li><a href="#our-story"
-                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Our
+                          class="block text-base transition-colors duration-200 text-text-secondary hover:text-text-primary">Our
                           Story</a></li>
                       <li><a href="#challenge"
-                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">The
+                          class="block text-base transition-colors duration-200 text-text-secondary hover:text-text-primary">The
                           Challenge</a></li>
                       <li><a href="#opportunity"
-                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">The
+                          class="block text-base transition-colors duration-200 text-text-secondary hover:text-text-primary">The
                           Opportunity</a></li>
                       <li><a href="#why-now"
-                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Why
+                          class="block text-base transition-colors duration-200 text-text-secondary hover:text-text-primary">Why
                           Now</a></li>
                       <li><a href="#solution"
-                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">The
+                          class="block text-base transition-colors duration-200 text-text-secondary hover:text-text-primary">The
                           Solution</a></li>
                       <li><a href="#approach"
-                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">The
+                          class="block text-base transition-colors duration-200 text-text-secondary hover:text-text-primary">The
                           Approach</a></li>
                       <li><a href="#team"
-                          class="block text-lg transition-colors duration-200 text-text-secondary hover:text-text-primary">Team</a>
+                          class="block text-base transition-colors duration-200 text-text-secondary hover:text-text-primary">Team</a>
                       </li>
                     </ul>
                   </nav>
@@ -806,7 +820,7 @@
               <div class="space-y-12">
                 <div class="relative flex items-start gap-8 md:flex-row" style="opacity: 1; transform: none;">
                   <div
-                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full standard-orange-bg flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg standard-orange-shadow">
                     1</div>
                   <div class="ml-20 md:ml-0 md:w-5/12 md:text-right md:pr-12">
                     <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
@@ -818,7 +832,7 @@
                 </div>
                 <div class="relative flex items-start gap-8 md:flex-row-reverse" style="opacity: 1; transform: none;">
                   <div
-                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full standard-orange-bg flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg standard-orange-shadow">
                     2</div>
                   <div class="ml-20 md:ml-0 md:w-5/12 md:text-left md:pl-12">
                     <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
@@ -830,7 +844,7 @@
                 </div>
                 <div class="relative flex items-start gap-8 md:flex-row" style="opacity: 1; transform: none;">
                   <div
-                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full standard-orange-bg flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg standard-orange-shadow">
                     3</div>
                   <div class="ml-20 md:ml-0 md:w-5/12 md:text-right md:pr-12">
                     <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
@@ -842,7 +856,7 @@
                 </div>
                 <div class="relative flex items-start gap-8 md:flex-row-reverse" style="opacity: 1; transform: none;">
                   <div
-                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full standard-orange-bg flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg standard-orange-shadow">
                     4</div>
                   <div class="ml-20 md:ml-0 md:w-5/12 md:text-left md:pl-12">
                     <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
@@ -854,7 +868,7 @@
                 </div>
                 <div class="relative flex items-start gap-8 md:flex-row" style="opacity: 1; transform: none;">
                   <div
-                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full bg-cosmic-orange flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg shadow-cosmic-orange/25">
+                    class="absolute left-6 md:left-1/2 w-12 h-12 rounded-full standard-orange-bg flex items-center justify-center text-white font-medium text-lg z-10 md:-translate-x-1/2 shadow-lg standard-orange-shadow">
                     5</div>
                   <div class="ml-20 md:ml-0 md:w-5/12 md:text-right md:pr-12">
                     <div class="bg-bg-secondary rounded-2xl p-6 hover:shadow-md transition-shadow">
@@ -949,14 +963,15 @@
                 <div class="aspect-video rounded-2xl overflow-hidden mb-5"><img alt="LunCoSim Beta Launch"
                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="./images/blog-1.jpg"></div>
-                <div><span class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Product
+                <div><span
+                    class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-3 block">Product
                     Updates</span>
                   <h3
-                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-cosmic-orange transition-colors">
+                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-standard-orange-text transition-colors">
                     LunCoSim Beta Launch</h3>
                   <p class="text-text-secondary leading-relaxed mb-4">We're excited to announce the beta release of
                     LunCoSim. Try our lunar simulation platform and share your feedback.</p><span
-                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-cosmic-orange transition-colors">Read
+                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-standard-orange-text transition-colors">Read
                     more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
@@ -971,13 +986,13 @@
                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="./images/blog-2.png"></div>
                 <div><span
-                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Technical</span>
+                    class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-3 block">Technical</span>
                   <h3
-                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-cosmic-orange transition-colors">
+                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-standard-orange-text transition-colors">
                     Building Modular Rovers with LORS</h3>
                   <p class="text-text-secondary leading-relaxed mb-4">Deep dive into the technical architecture of LORS
                     and how modularity enables rapid prototyping.</p><span
-                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-cosmic-orange transition-colors">Read
+                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-standard-orange-text transition-colors">Read
                     more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
@@ -992,13 +1007,13 @@
                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     src="./images/blog-3.png"></div>
                 <div><span
-                    class="text-xs font-medium tracking-[0.15em] text-cosmic-orange uppercase mb-3 block">Community</span>
+                    class="text-xs font-medium tracking-[0.15em] standard-orange-text uppercase mb-3 block">Community</span>
                   <h3
-                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-cosmic-orange transition-colors">
+                    class="text-xl font-medium text-text-primary mb-3 group-hover:text-standard-orange-text transition-colors">
                     Meet Our Contributors</h3>
                   <p class="text-text-secondary leading-relaxed mb-4">Spotlight on the amazing engineers and developers
                     building the future of lunar exploration with us.</p><span
-                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-cosmic-orange transition-colors">Read
+                    class="inline-flex items-center text-sm font-medium text-text-primary group-hover:text-standard-orange-text transition-colors">Read
                     more<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                       class="lucide lucide-arrow-right ml-2 w-4 h-4 transition-transform group-hover:translate-x-1"
@@ -1033,38 +1048,45 @@
               <h4 class="font-medium text-sm mb-3">Products</h4>
               <ul class="space-y-2">
                 <li><a href="#luncosim"
-                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">LunCoSim</a></li>
-                <li><a href="#lors" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">LORS</a>
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">LunCoSim</a></li>
+                <li><a href="#lors"
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">LORS</a>
                 </li>
                 <li><a href="#cosmifi"
-                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">CosmiFi</a></li>
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">CosmiFi</a></li>
               </ul>
             </div>
             <div>
               <h4 class="font-medium text-sm mb-3">Company</h4>
               <ul class="space-y-2">
-                <li><a href="#about" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">About
+                <li><a href="#about"
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">About
                     Us</a></li>
-                <li><a href="#team" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Team</a>
+                <li><a href="#team"
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">Team</a>
                 </li>
                 <li><a href="#roadmap"
-                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Roadmap</a></li>
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">Roadmap</a></li>
                 <li><a href="#newsroom"
-                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Blog</a></li>
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">Blog</a></li>
                 <li><a href="#opportunities"
-                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Opportunities</a></li>
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">Opportunities</a>
+                </li>
               </ul>
             </div>
             <div>
               <h4 class="font-medium text-sm mb-3">Resources</h4>
               <ul class="space-y-2">
                 <li><a href="#"
-                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Documentation</a></li>
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">Documentation</a>
+                </li>
                 <li><a href="https://github.com/LunCoSim/lunco-sim" target="_blank" rel="noopener noreferrer"
-                    class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">GitHub</a></li>
-                <li><a href="#" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Community
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">GitHub</a></li>
+                <li><a href="#"
+                    class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">Community
                     Forum</a></li>
-                <li><a href="#" class="text-white/60 text-sm hover:text-cosmic-orange transition-colors">Contact Us</a>
+                <li><a href="#" class="text-white/60 text-sm hover:text-standard-orange-text transition-colors">Contact
+                    Us</a>
                 </li>
               </ul>
             </div>
@@ -1073,8 +1095,9 @@
             class="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <p class="text-white/40 text-sm">© 2026 LunCo. All rights reserved.</p>
             <div class="flex gap-6"><a href="#"
-                class="text-white/40 text-sm hover:text-cosmic-orange transition-colors">Privacy Policy</a><a href="#"
-                class="text-white/40 text-sm hover:text-cosmic-orange transition-colors">Terms of Service</a></div>
+                class="text-white/40 text-sm hover:text-standard-orange-text transition-colors">Privacy Policy</a><a
+                href="#" class="text-white/40 text-sm hover:text-standard-orange-text transition-colors">Terms of
+                Service</a></div>
           </div>
         </div>
       </footer>
