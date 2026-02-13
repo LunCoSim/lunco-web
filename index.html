@@ -25,10 +25,38 @@
       backdrop-filter: none;
     }
 
+    #main-nav.nav-transparent a:not([data-slot="button"]):not(.nav-active) {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+
+    /* Mobile menu button in transparent mode */
+    #main-nav.nav-transparent .lucide-menu {
+      color: white !important;
+    }
+
+    /* Change logo color to white in transparent mode */
+    #main-nav.nav-transparent img {
+      filter: brightness(0) invert(1);
+    }
+
     #main-nav.nav-white {
       background-color: rgba(255, 255, 255, 1);
       box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
       backdrop-filter: blur(12px);
+    }
+
+    #main-nav.nav-white a:not([data-slot="button"]):not(.nav-active) {
+      color: #1a1a1a !important;
+    }
+
+    /* Mobile menu button in white mode */
+    #main-nav.nav-white .lucide-menu {
+      color: #1a1a1a !important;
+    }
+
+    /* Reset logo color to original in white mode */
+    #main-nav.nav-white img {
+      filter: none;
     }
 
     #main-nav.nav-hidden {
@@ -1073,7 +1101,7 @@
       sections.forEach(s => s.classList.add('reveal'));
 
       // 2. Header behavior (Transparent -> Solid, Hide on scroll down)
-      window.addEventListener('scroll', () => {
+      const handleScroll = () => {
         const currentScrollY = window.scrollY;
 
         // Transparency logic
@@ -1094,7 +1122,10 @@
           header.classList.remove('nav-hidden');
         }
         lastScrollY = currentScrollY;
-      });
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Call once to set initial state
 
       // 3. Scroll Spy & Reveal Observer
       const observer = new IntersectionObserver((entries) => {
